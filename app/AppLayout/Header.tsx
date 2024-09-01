@@ -8,35 +8,37 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+const linkInfo = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "About Me",
+    href: "/",
+  },
+  {
+    title: "WiD Community",
+    href: "/",
+  },
+  {
+    title: "Media & Features",
+    href: "/",
+  },
+  {
+    title: "Blog",
+    href: "/",
+  },
+  {
+    title: "Media Kit",
+    href: "/",
+  },
+];
 const Header = () => {
-  const linkInfo = [
-    {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "About Me",
-      href: "/",
-    },
-    {
-      title: "WiD Community",
-      href: "/",
-    },
-    {
-      title: "Media & Features",
-      href: "/",
-    },
-    {
-      title: "Blog",
-      href: "/",
-    },
-    {
-      title: "Media Kit",
-      href: "/",
-    },
-  ];
   return (
-    <header className={`py-[1rem] xl:px-[5rem] ${montserrat.className}`}>
+    <header
+      className={`py-[1rem] sticky bg-white z-[200] top-0 xl:px-[5rem] ${montserrat.className}`}
+    >
       <section className="flex items-center justify-between">
         <figure>
           <img src="/svg/logo.svg" alt="Logo" />
@@ -58,7 +60,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <button className="bg-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]">
+        <button className="bg-[#76063D] btn hover:bg-white hover:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]">
           Contact Me
           <SVGClient src="/svg/navigation-03.svg" />
         </button>

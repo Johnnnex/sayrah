@@ -4,13 +4,36 @@
 
 /* Remove default anchor styles */
 a {
-  text-decoration: none !important;
-  color: inherit !important;
-  border: none !important;
-  margin: 0 !important;
-  outline: none !important;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  margin: 0;
+  outline: none;
+  position: relative;
+  overflow: hidden !important;
+  transition: 0.4s;
+  display: block;
 }
-
+.a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #76063d;
+  transform: translateX(-100%);
+  transition: 0.4s;
+}
+.a:hover::after {
+  transform: translateX(0%);
+}
+.btn svg {
+  transition: 0.4s;
+}
+.btn:hover svg {
+  transform: rotate(45deg);
+}
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
