@@ -39,7 +39,7 @@ const linkInfo = [
 ];
 const Footer = () => {
   return (
-    <footer className="">
+    <footer className="bg-white">
       <section className={`py-[2.5rem] text-white bg-[#76063D] `}>
         <h3
           className={` text-[1.5rem] font-[500] ${syne.className} text-center leading-[133.333%]`}
@@ -49,8 +49,8 @@ const Footer = () => {
         <p
           className={`text-center leading-[266.667%] mb-[1.25rem] ${poppins.className}`}
         >
-          Not just another boring newsletter, I promise... I’d be seeing you
-          around.
+          Not just another boring newsletter, I promise... I&apos;d be seeing
+          you around.
         </p>
         <div className="w-fit mx-auto flex items-center gap-[1.25rem]">
           <input
@@ -66,7 +66,7 @@ const Footer = () => {
           </button>
         </div>
       </section>
-      <section className="pt-[2.5rem]  pb-[5.0625rem] px-[3.25rem]">
+      <section className="pt-[2.5rem] max-w-[109.375rem] mx-auto  pb-[5.0625rem] px-[3.25rem]">
         <div className="flex items-center justify-between px-[2rem]">
           <figure>
             <img src="/svg/logo.svg" alt="Logo" />
