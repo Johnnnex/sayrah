@@ -100,6 +100,15 @@ const features: {
     link: "https://open.spotify.com/episode/1zwkAfhTXSyPAJkFrFh43y",
   },
 ];
+
+const contactInfo: {
+  icon: string;
+  text: string;
+}[] = [
+  { icon: "call-02", text: "(234) 0708-950-6462" },
+  { icon: "mail-02", text: "sarahidahosa001@gmail.com" },
+  { icon: "location-06", text: "Lagos, Nigeria" },
+];
 const HomePage = () => {
   return (
     <main>
@@ -136,8 +145,8 @@ const HomePage = () => {
           ))}
         </div>
       </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[5rem] pl-[5rem]">
-        <div className="max-w-[109.375rem] mx-auto">
+      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[5rem]">
+        <div className="max-w-[109.375rem] w-[90%] mx-auto">
           <Chip name="ABOUT ME" />
           <div
             className={`flex mt-[1rem]  items-center gap-[3.75rem] w-fit ml-auto`}
@@ -182,8 +191,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[url(/images/bg.jpg)] p-[5rem]">
-        <div className="max-w-[109.375rem] mx-auto">
+      <section className="bg-[url(/images/bg.jpg)] py-[5rem]">
+        <div className="max-w-[109.375rem] w-[90%] mx-auto">
           <Chip name="my services" />
           <div className="flex gap-y-[1.6875rem] mt-[3.75rem] flex-wrap gap-x-[2.5rem]">
             {serviceInfo.map(({ svg, text, title }, index) => (
@@ -212,13 +221,81 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center  pl-[5rem] py-[5rem]">
-        <div className="max-w-[109.375rem] mx-auto">
+      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[5rem]">
+        <div className="max-w-[109.375rem] w-[90%] mx-auto">
           <Chip name="TESTIMONIALS" />
         </div>
       </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center  p-[5rem]">
-        <div className="max-w-[109.375rem] mx-auto">
+      <section className="bg-[url(/images/bg.jpg)] bg-cover bg-center py-[5rem]">
+        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+          <Chip name="CONTACT ME" />
+          <div className="mt-[2.5rem] border border-[#76063D] rounded-[12px] p-[2.625rem]">
+            <div className="shadow-index rounded-[12px] overflow-hidden flex flex-wrap">
+              <div className="pl-[4.125rem] pr-[3.75rem] bg-[#76063D] pb-[3.75rem] flex items-end flex-1 min-w-fit basis-[25.6875rem]">
+                <div className="">
+                  <h4
+                    className={`text-[1.75rem] ${syne.className} w-[70%] font-[600] mb-[1.25rem] text-white`}
+                  >
+                    Let’s Connect & Collaborate
+                  </h4>
+                  <div className="flex gap-[1.25rem] text-white flex-col">
+                    {contactInfo.map(({ icon, text }, index) => (
+                      <div
+                        key={"contact__" + index}
+                        className="flex react-svg items-center gap-[1rem]"
+                      >
+                        <SVGClient
+                          className="react-svg text-[#76063D] flex aspect-[1/1] w-[2rem] border border-[#ffffff] bg-white items-center justify-center rounded-[50%]"
+                          src={`/svg/${icon}.svg`}
+                        />
+                        <span
+                          className={`text-[1rem] font-[400] ${poppins.className}`}
+                        >
+                          {text}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-[2.75rem] flex items-center gap-[.5rem]">
+                    <div
+                      className={`text-[1rem] ${poppins.className} flex font-[500] gap-[.5rem] items-center react-svg text-white leading-[200%]`}
+                    >
+                      <SVGClient src="/svg/line.svg" />
+                      Follow Me
+                    </div>
+                    <div className="flex items-center gap-[.5rem]">
+                      {[
+                        "twitter",
+                        "medium",
+                        "mail",
+                        "tiktok",
+                        "instagram",
+                        "linkedin",
+                        "telegram-one",
+                        "discord",
+                      ].map((socialIcons, index) => (
+                        <a
+                          href=""
+                          key={"icon__" + index}
+                          className="h-fit w-fit"
+                        >
+                          <SVGClient
+                            className="aspect-[1/1] rounded-[50%] text-white border p-[6px] items-center justify-center flex"
+                            src={"/svg/" + socialIcons + ".svg"}
+                          />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-1 basis-[44.0625rem]"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[url(/images/bg-white.jpg)] bg-cover py-[5rem] bg-center">
+        <div className="max-w-[109.375rem] w-[90%] mx-auto">
           <Chip name="features" />
           <div className="flex gap-y-[1.75rem] mt-[3.75rem] flex-wrap gap-x-[1.6875rem]">
             {features.map(({ subtitle, url, link, title }, index) => (
@@ -227,14 +304,15 @@ const HomePage = () => {
                 className="basis-[18.75rem] flex-1 border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF] "
               >
                 <figure
-                  className={`h-[9.8125rem] bg-[url(${
-                    "/images/" + url + ".png"
-                  })] bg-cover bg-center bg-blend-overlay bg-[#0000007F] w-full  mb-[.75rem]`}
+                  style={{
+                    backgroundImage: `url(${"/images/" + url + ".png"})`,
+                  }}
+                  className={`h-[9.8125rem] bg-cover bg-center bg-blend-overlay bg-[#0000007F] w-full  mb-[.75rem]`}
                 ></figure>
                 <div
                   className={`py-[.625rem] text-[.75rem] ${poppins.className} font-[400] pl-[.75rem] pr-[1.1875rem]`}
                 >
-                  <a href={link} className={` text-black`}>
+                  <a href={link} className={`text-black`}>
                     {title}
                   </a>
                   <hr className="my-[5.5px]" />
