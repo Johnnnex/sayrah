@@ -17,8 +17,12 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-const imgUrls = ["ats", "cmfest", "dexv", "ogun", "bao", "xpedition"];
-const serviceInfo = [
+const imgUrls: string[] = ["ats", "cmfest", "dexv", "ogun", "bao", "xpedition"];
+const serviceInfo: {
+  svg: string;
+  title: string;
+  text: string;
+}[] = [
   {
     svg: "tool",
     title: "Community Building",
@@ -38,6 +42,62 @@ const serviceInfo = [
     svg: "nimbus_marketing",
     title: "Marketing & Consulting",
     text: "Lorem ipsum dolor sit amet consectetur. Amet enim morbi eu id aliquam eget in. Facilisis justo mi congue commodo sem eu morbi imperdiet. Amet eget morbi nibh lorem sit nunc sit. Habitant sed eget donec turpis quis. Senectus cursus sit facilisis urna lectus cursus sit sed suspendisse. Urna nulla pulvinar massa luctus.",
+  },
+];
+const features: {
+  title: string;
+  url: string;
+  subtitle: string;
+  link: string;
+}[] = [
+  {
+    title: "Empowering Women In Blockchain: The Journey of Women In DeFi.",
+    url: "features-sarah",
+    subtitle: "Inside the Hive with Feezy Podcast; Sept 2023",
+    link: "https://open.spotify.com/episode/1RjnKtPK0nK8Mbioz3guN0",
+  },
+  {
+    title: "UNILAG; The Expedition.",
+    url: "features-sarah",
+    subtitle: "Nairametrics; April 26, 2023",
+    link: "https://nairametrics.com/2023/04/26/unilag-others-brace-up-for-the-expedition-conference-tec-8-0/",
+  },
+  {
+    title:
+      "TechNext Women In Tech Series: Sarah Idahosa, Founder; Women in DeFI.",
+    url: "features-sarah",
+    subtitle: "TechNext24; March 13, 2023",
+    link: "https://technext24.com/2023/03/13/sarah-idahosa-founder-of-women-in-defi/",
+  },
+  {
+    title: "Global Fintech Interview.",
+    url: "features-sarah",
+    subtitle: "iTech Series; December 30, 2022",
+    link: "https://globalfintechseries.com/blockchain/global-fintech-interview-with-sarah-idahosa-founder-at-womenindefi/",
+  },
+  {
+    title: "Africa Tech Summit",
+    url: "features-sarah",
+    subtitle: "Cointelegraph; Sept 27, 2022",
+    link: "https://x.com/Cointelegraph/status/1574792079783362567?t=7skMDX56j7YwSv3qnL_A9g&s=19",
+  },
+  {
+    title: "Mara: Blockchain Masterclass: The impact of communities in Web3.",
+    url: "features-sarah",
+    subtitle: "Mara; Sept 14, 2022",
+    link: "https://www.youtube.com/watch?v=KbhvlMt_xYI",
+  },
+  {
+    title: "Women Series: DeFi; Use Cases & Benefits to the Economy.",
+    url: "features-sarah",
+    subtitle: "Web3TV Nigeria; August 3, 2022",
+    link: "https://www.youtube.com/watch?v=Kxd54Yskn9I",
+  },
+  {
+    title: "Web3 Delight Podcast",
+    url: "features-sarah",
+    subtitle: "Web3 Delight; Jul 2022",
+    link: "https://open.spotify.com/episode/1zwkAfhTXSyPAJkFrFh43y",
   },
 ];
 const HomePage = () => {
@@ -76,7 +136,7 @@ const HomePage = () => {
           ))}
         </div>
       </section>
-      <section className="bg-white py-[5rem] pl-[5rem]">
+      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[5rem] pl-[5rem]">
         <div className="max-w-[109.375rem] mx-auto">
           <Chip name="ABOUT ME" />
           <div
@@ -147,6 +207,39 @@ const HomePage = () => {
                 >
                   {text}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center  pl-[5rem] py-[5rem]">
+        <div className="max-w-[109.375rem] mx-auto">
+          <Chip name="TESTIMONIALS" />
+        </div>
+      </section>
+      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center  p-[5rem]">
+        <div className="max-w-[109.375rem] mx-auto">
+          <Chip name="features" />
+          <div className="flex gap-y-[1.75rem] mt-[3.75rem] flex-wrap gap-x-[1.6875rem]">
+            {features.map(({ subtitle, url, link, title }, index) => (
+              <div
+                key={"servce" + index}
+                className="basis-[18.75rem] flex-1 border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF] "
+              >
+                <figure
+                  className={`h-[9.8125rem] bg-[url(${
+                    "/images/" + url + ".png"
+                  })] bg-cover bg-center bg-blend-overlay bg-[#0000007F] w-full  mb-[.75rem]`}
+                ></figure>
+                <div
+                  className={`py-[.625rem] text-[.75rem] ${poppins.className} font-[400] pl-[.75rem] pr-[1.1875rem]`}
+                >
+                  <a href={link} className={` text-black`}>
+                    {title}
+                  </a>
+                  <hr className="my-[5.5px]" />
+                  <p className="text-[#000000B2]">{subtitle}</p>
+                </div>
               </div>
             ))}
           </div>
