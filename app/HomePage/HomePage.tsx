@@ -174,7 +174,7 @@ const HomePage = () => {
                 between individuals & the manifold advantages inherent in the
                 Web3 landscape....
               </p>
-              <button className="bg-[#76063D] hover:bg-white hover:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]">
+              <button className="bg-[#76063D] hover:bg-white hover:text-[#76063D] focus:bg-white focus:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]">
                 Download CV
                 <SVGClient src="/svg/document-attachment.svg" />
               </button>

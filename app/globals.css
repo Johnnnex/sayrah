@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* remove default browser focus  */
+*:focus {
+  outline: none;
+}
 /* Remove default anchor styles */
 a {
   text-decoration: none;
@@ -25,13 +29,15 @@ a {
   transform: translateX(-100%);
   transition: 0.4s;
 }
-.a:hover::after {
+.a:hover::after,
+.a:focus::after {
   transform: translateX(0%);
 }
 .btn svg {
   transition: 0.4s;
 }
-.btn:hover svg {
+.btn:hover svg,
+.btn:focus svg {
   transform: rotate(45deg);
 }
 @property --angle {
@@ -52,7 +58,8 @@ a {
   );
 }
 
-.conic-nav-bg:hover {
+.conic-nav-bg:hover,
+.conic-nav-bg:focus {
   animation: 1s spin linear infinite;
 }
 

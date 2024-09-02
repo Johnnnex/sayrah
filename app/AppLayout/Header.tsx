@@ -37,7 +37,7 @@ const linkInfo = [
 const Header = () => {
   return (
     <header
-      className={`py-[1rem] sticky bg-white z-[200] top-0 xl:px-[5rem] ${montserrat.className}`}
+      className={`py-[1rem] sticky bg-white z-[500] top-0 xl:px-[5rem] ${montserrat.className}`}
     >
       <section className="flex items-center justify-between">
         <figure>
@@ -60,7 +60,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <button className="bg-[#76063D] btn hover:bg-white hover:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]">
+        <button className="bg-[#76063D] btn hover:bg-white focus:bg-white hover:text-[#76063D] focus:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]">
           Contact Me
           <SVGClient src="/svg/navigation-03.svg" />
         </button>

@@ -120,7 +120,7 @@ const ContactForm = () => {
                 ].map((socialIcons, index) => (
                   <a href="" key={"icon__" + index} className="h-fit w-fit">
                     <SVGClient
-                      className="aspect-[1/1] hover:text-[#76063D] hover:bg-white transition-[.4s] rounded-[50%] text-white border p-[6px] items-center justify-center flex"
+                      className="aspect-[1/1] hover:text-[#76063D] hover:bg-white focus:text-[#76063D] focus:bg-white transition-[.4s] rounded-[50%] text-white border p-[6px] items-center justify-center flex"
                       src={"/svg/" + socialIcons + ".svg"}
                     />
                   </a>
@@ -156,7 +156,7 @@ const ContactForm = () => {
             );
           })}
           <button
-            className={`bg-[#76063D] w-fit ml-auto btn hover:bg-white hover:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem] ${montserrat.className}`}
+            className={`bg-[#76063D] w-fit ml-auto btn hover:bg-white hover:text-[#76063D] focus:bg-white focus:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem] ${montserrat.className}`}
           >
             Send Message
             <SVGClient src="/svg/navigation-03.svg" />

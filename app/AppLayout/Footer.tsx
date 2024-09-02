@@ -59,7 +59,7 @@ const Footer = () => {
             type="text"
           />
           <button
-            className={`bg-[#FFF] btn text-[1rem] hover:text-white hover:bg-transparent border border-white transition-[.4s] items-center rounded-[1.5rem] gap-[.5rem] font-[500] react-svg text-[#76063D] flex px-[1.5rem] py-[.7rem] ${montserrat.className}`}
+            className={`bg-[#FFF] btn text-[1rem] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[1.5rem] gap-[.5rem] font-[500] react-svg text-[#76063D] flex px-[1.5rem] py-[.7rem] ${montserrat.className}`}
           >
             Subscribe
             <SVGClient src="/svg/navigation-03.svg" />
