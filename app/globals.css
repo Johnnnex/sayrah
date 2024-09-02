@@ -68,3 +68,24 @@ a {
   display: flex !important;
   align-items: center !important;
 }
+
+.input-container {
+  position: relative;
+}
+
+.input-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  z-index: 400;
+  background-color: currentColor;
+  transition: all 0.4s ease-out;
+}
+
+.input-container:focus-within::after {
+  width: 100%;
+  left: 0%;
+}
