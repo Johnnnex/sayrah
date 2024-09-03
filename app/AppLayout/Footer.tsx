@@ -73,7 +73,7 @@ const Footer = () => {
           </figure>
           <ul className="flex items-center gap-[2.5rem]">
             {linkInfo.map((e, index) => (
-              <li key={index}>
+              <li key={"footer__link__" + index}>
                 <a
                   href={e.href}
                   className={`text-[.75rem] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}

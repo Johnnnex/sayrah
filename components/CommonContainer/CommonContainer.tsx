@@ -21,20 +21,20 @@ const CommonContainer = ({
   iconName?: string;
 }) => {
   return (
-    <div className="basis-[18.75rem] hover:[&>figure]:scale-[130%] flex-1 border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF] ">
+    <div className="basis-[18.75rem] img-hover hover:[&>figure>span]:text-[#ADB77E] hover:[&>figure>span]:bg-[#000000AA] flex-1 border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF] ">
       <figure
-        className={`h-[10.5625rem] border border-red-500 relative transition-transform overlay-comp duration-[.7s] bg-cover bg-center bg-blend-overlay w-full`}
+        className={`h-[10.5625rem] relative transition-transform duration-[.7s] bg-cover bg-center bg-blend-overlay w-full`}
       >
         <img
-          className="h-full w-full"
+          className="h-full w-full transition-transform duration-[.7s]"
           loading="lazy"
           src={"/images/" + imgUrl + ".png"}
           alt=""
         />
-        <span className="bg-[#0000007F] top-0 left-0 absolute h-full w-full">
-          <span className="flex items-center justify-center h-full w-full">
+        <span className="bg-[#0000007F] text-[#ADB77E40] transition-colors duration-[.7s] top-0 left-0 absolute h-full w-full">
+          <span className="flex transition-colors text-current duration-[.7s] items-center justify-center h-full w-full">
             {!!iconName ? (
-              <SVGClient src={"/svg/" + iconName + ".svg"} />
+              <SVGClient className="" src={"/svg/" + iconName + ".svg"} />
             ) : null}
           </span>
         </span>

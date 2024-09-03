@@ -47,7 +47,7 @@ const Header = () => {
           {linkInfo.map((item, index) => (
             <li
               className="min-w-max m-0 text-[#76063D]"
-              key={"nav_item_" + index}
+              key={"nav__item__" + index}
             >
               <a
                 className="min-w-max min-h-max conic-nav-bg rounded-[1.5rem] flex justify-center items-center m-0"

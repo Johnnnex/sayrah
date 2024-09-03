@@ -4,6 +4,7 @@ import Chip from "@/components/Chip";
 import CommonContainer from "@/components/CommonContainer";
 import ContactForm from "@/components/ContactForm";
 import SVGClient from "@/components/SVGClient";
+import Testimonial from "@/components/Testimonial";
 import { Montserrat, Poppins, Syne } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -134,7 +135,7 @@ const HomePage = () => {
         <div className="max-w-[109.375rem] flex items-center w-full justify-between mx-auto">
           {imgUrls.map((url, index) => (
             <img
-              key={`img_${index}`}
+              key={`img__${index}`}
               src={"/svg/" + url + ".svg"}
               alt={`img_${index}`}
             />
@@ -193,7 +194,7 @@ const HomePage = () => {
           <div className="flex gap-y-[1.6875rem] mt-[3.75rem] flex-wrap gap-x-[2.5rem]">
             {serviceInfo.map(({ svg, text, title }, index) => (
               <div
-                key={"servce" + index}
+                key={"service__" + index}
                 className="pt-[1.25rem] basis-[37.5rem] flex-1 border-[.25px] border-[#00000040] pb-[2.75rem] rounded-[8px] bg-[#FFF] px-[2.5rem]"
               >
                 <figure className="aspect-[1/1] mb-[.75rem] w-[2.5rem] bg-[#76063D] text-white react-svg flex items-center justify-center rounded-[8px] mx-auto">
@@ -220,6 +221,9 @@ const HomePage = () => {
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[5rem]">
         <div className="max-w-[109.375rem] w-[90%] mx-auto">
           <Chip name="TESTIMONIALS" />
+        </div>
+        <div className="border max-w-[109.375rem] overflow-hidden mx-auto">
+          <Testimonial />
         </div>
       </section>
       <section className="bg-[url(/images/bg.jpg)] bg-cover bg-center py-[5rem]">

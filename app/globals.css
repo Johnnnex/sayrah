@@ -96,3 +96,10 @@ a {
   width: 100%;
   left: 0%;
 }
+
+.img-hover {
+  transition: transform 0.4s;
+}
+.img-hover:hover img {
+  transform: scale(130%);
+}

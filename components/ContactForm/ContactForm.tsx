@@ -109,16 +109,20 @@ const ContactForm = () => {
               </div>
               <div className="flex items-center gap-[.5rem]">
                 {[
-                  "twitter",
-                  "medium",
-                  "mail",
-                  "tiktok",
-                  "instagram",
-                  "linkedin",
-                  "telegram-one",
-                  "discord",
-                ].map((socialIcons, index) => (
-                  <a href="" key={"icon__" + index} className="h-fit w-fit">
+                  { socialIcons: "twitter", socialLinks: "" },
+                  { socialIcons: "medium", socialLinks: "" },
+                  { socialIcons: "mail", socialLinks: "" },
+                  { socialIcons: "tiktok", socialLinks: "" },
+                  { socialIcons: "instagram", socialLinks: "" },
+                  { socialIcons: "linkedin", socialLinks: "" },
+                  { socialIcons: "telegram-one", socialLinks: "" },
+                  { socialIcons: "discord", socialLinks: "" },
+                ].map(({ socialIcons, socialLinks }, index) => (
+                  <a
+                    href={socialLinks}
+                    key={"icon__" + index}
+                    className="h-fit w-fit"
+                  >
                     <SVGClient
                       className="aspect-[1/1] hover:text-[#76063D] hover:bg-white focus:text-[#76063D] focus:bg-white transition-[.4s] rounded-[50%] text-white border p-[6px] items-center justify-center flex"
                       src={"/svg/" + socialIcons + ".svg"}
@@ -132,7 +136,10 @@ const ContactForm = () => {
         <div className="flex-1 flex flex-col gap-[1.25rem] bg-white basis-[44.0625rem] px-[3.4375rem] py-[3.75rem]">
           {contactFields.map((fields, parentIndex) => {
             return Array.isArray(fields) ? (
-              <div className="flex w-full gap-[2.5rem]">
+              <div
+                key={"parent__" + parentIndex}
+                className="flex w-full gap-[2.5rem]"
+              >
                 {fields.map((field, index) => (
                   <div
                     key={"field__" + index + "__" + parentIndex}
