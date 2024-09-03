@@ -222,7 +222,7 @@ const HomePage = () => {
         <div className="max-w-[109.375rem] w-[90%] mx-auto">
           <Chip name="TESTIMONIALS" />
         </div>
-        <div className="border max-w-[109.375rem] overflow-hidden mx-auto">
+        <div className="max-w-[109.375rem] mt-[2.5rem] overflow-hidden mx-auto">
           <Testimonial />
         </div>
       </section>
