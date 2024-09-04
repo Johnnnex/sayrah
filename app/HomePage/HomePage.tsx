@@ -110,7 +110,7 @@ const features: {
 const HomePage = () => {
   return (
     <main>
-      <section className="w-full relative max-h-[47.5rem] h-[80vh]">
+      <section className="w-full relative max-h-[47.5rem] h-[85vh]">
         <BgSlider />
         <div className="absolute h-full w-full flex items-end top-0 left-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent">
           <div className="px-[5rem] max-w-[109.375rem] mx-auto pb-[4.1875rem] text-white">

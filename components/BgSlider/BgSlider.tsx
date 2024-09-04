@@ -23,7 +23,7 @@ const BgSlider = () => {
   return (
     <div
       style={{ height: "100%", width: "100%", overflow: "hidden" }}
-      className="embla"
+      className="embla hero-slider"
       ref={emblaRef}
     >
       <div className="embla__container flex h-full w-full">
