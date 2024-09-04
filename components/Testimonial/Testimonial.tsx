@@ -119,10 +119,10 @@ const Testimonial = () => {
           <button
             disabled={index === activeIndex}
             key={"pagination__" + index}
-            className={`embla__pagination-dot w-[12px] transition-[.8s] aspect-square ${
+            className={`transition-[.8s] aspect-square ${
               index === activeIndex
-                ? "bg-[#76063D] w-[24px] rounded-[20px] aspect-[2/1]"
-                : "bg-[#76063D33] rounded-[50%] aspect-square"
+                ? "bg-[#76063D] w-[24px] rounded-[20px] h-[12px]"
+                : "bg-[#76063D33] rounded-[50%] w-[12px] h-[12px]"
             }`}
             onClick={() => emblaApi?.scrollTo(index)}
           />
