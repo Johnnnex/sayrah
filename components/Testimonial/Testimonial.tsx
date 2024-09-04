@@ -75,16 +75,18 @@ const Testimonial = () => {
   }, [emblaApi]);
   return (
     <section className="embla" ref={emblaRef}>
-      <div className={`embla__container pt-[40px] flex ${poppins.className}`}>
+      <div
+        className={`embla__container pt-[80px] flex items-center ${poppins.className}`}
+      >
         {testimonialData.map(({ imgName, testimonial, role, user }, index) => (
           <div
             key={"testimonial__" + index}
             style={{ transition: "margin 1s" }}
             className={`embla__slide mr-[40px] min-w-0 relative overflow-hidden flex-shrink-0 flex-grow-0 basis-[620px] ${
-              index === activeIndex ? "mt-[-40px]" : ""
+              index === activeIndex ? "mt-[-80px]" : ""
             }`}
           >
-            <p className="p-[1.375rem] bg-[#FDFCFC] border-[.25px] border-[#0000000D] italic font-[400] rounded-t-[8px] text-[0.875rem] text-center tracking-[0.28px] text-black">
+            <p className="h-[10.625rem] bg-[#FDFCFC] px-[1rem] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] text-[0.875rem] text-center tracking-[0.28px] text-black">
               {testimonial}
             </p>
             <div className="bg-white relative z-[600] h-[4px] w-full"></div>
@@ -105,11 +107,7 @@ const Testimonial = () => {
             </div>
             <p
               style={{ transition: "inset 1s" }}
-              className={`${
-                abeeze.className
-              } text-[20rem] max-h-[10rem] text-[#0000000D] ${
-                index === activeIndex ? "bottom-[5.5rem]" : ""
-              } z-[500] right-[-20px] font-[400] absolute bottom-[3rem]`}
+              className={`${abeeze.className} text-[20rem] max-h-[10rem] text-[#0000000D] z-[500] right-[-20px] font-[400] absolute bottom-[3rem]`}
             >
               “
             </p>
