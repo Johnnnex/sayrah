@@ -22,11 +22,11 @@ const linkInfo = [
   },
   {
     title: "WiD Community",
-    href: "/",
+    href: "/community",
   },
   {
     title: "Media & Features",
-    href: "/",
+    href: "/media",
   },
   {
     title: "Blog",
@@ -34,7 +34,7 @@ const linkInfo = [
   },
   {
     title: "Media Kit",
-    href: "/",
+    href: "/media-kit",
   },
 ];
 const Header = () => {
@@ -55,7 +55,7 @@ const Header = () => {
             >
               <Link
                 className={`min-w-max min-h-max ${
-                  pathname === item.href ? "conic-nav-bg" : ""
+                  pathname === item.href ? "conic-nav-bg" : "reg-nav-bg"
                 } rounded-[1.5rem] flex justify-center items-center m-0`}
                 href={item.href}
               >

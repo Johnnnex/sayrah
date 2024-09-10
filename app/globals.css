@@ -71,6 +71,17 @@ a {
     --angle: 360deg;
   }
 }
+
+.reg-nav-bg {
+  background-color: #76063d1a;
+  transition: all 0.4s;
+}
+
+.reg-nav-bg:hover,
+.reg-nav-bg:focus {
+  background-color: rgba(118, 6, 60, 0.348);
+}
+
 .react-svg > div > div {
   display: flex !important;
   align-items: center !important;
