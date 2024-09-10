@@ -67,6 +67,24 @@ const featured: {
     subtitle: "Web3 Delight; Jul 2022",
     link: "https://open.spotify.com/episode/1zwkAfhTXSyPAJkFrFh43y",
   },
+  {
+    title: "Cryptocurrency Market: Navigating Defi Protocols As Hacks Rise",
+    url: "features-sarah",
+    subtitle: "Channels Television; May 17, 2022",
+    link: "https://www.youtube.com/watch?v=ytrEaITxixQ&feature=youtu.be",
+  },
+  {
+    title: "Crypto Ladies League “Blockchain Week”.",
+    url: "features-sarah",
+    subtitle: "CryptoTVPlus; March 8, 2022",
+    link: "https://cryptotvplus.com/2022/03/commemorating-the-international-womens-day-crypto-ladies-league-is-set-to-host-her-first-public-event-blockchain-week-in/",
+  },
+  {
+    title: "Women Series: DeFi; Use Cases & Benefits to the Economy.",
+    url: "features-sarah",
+    subtitle: "Web3TV Nigeria; August 3, 2022",
+    link: "https://www.youtube.com/watch?v=Kxd54Yskn9I",
+  },
 ];
 const About = () => {
   return (
@@ -120,7 +138,7 @@ const About = () => {
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center">
         <div className="flex flex-wrap gap-[1.625rem] max-w-[109.375rem] w-[90%] mx-auto pt-[4.375rem] pb-[6.375rem]">
           <h2
-            className={`${syne.className} basis-[] relative text-[4rem] font-[500] ordinal text-[#76063D]`}
+            className={`${syne.className} h-fit relative text-[4rem] font-[500] ordinal text-[#76063D]`}
           >
             Featured
             <SVGClient
@@ -137,7 +155,6 @@ const About = () => {
               title={title}
             />
           ))}
-          <div className=""></div>
         </div>
       </section>
     </>

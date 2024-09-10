@@ -14,20 +14,24 @@ const CommonContainer = ({
   title,
   imgUrl,
   iconName,
+  basis,
 }: {
   link: string;
   subtitle: string;
   title: string;
   imgUrl: string;
+  basis?: string;
   iconName?: string;
 }) => {
   return (
-    <div className="basis-[18.75rem] img-hover hover:[&>figure>span]:text-[#ADB77E] hover:[&>figure>span]:bg-[#000000AA] flex-1 border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF] ">
-      <figure
-        className={`h-[10.5625rem] relative transition-transform duration-[.7s] bg-cover bg-center bg-blend-overlay w-full`}
-      >
+    <div
+      className={`${
+        basis ? basis : "basis-[18.75rem]"
+      } img-hover hover:[&>figure>span]:text-[#ADB77E] hover:[&>figure>span]:bg-[#000000AA] flex-1 border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF]`}
+    >
+      <figure className={`h-[10.5625rem] relative duration-[.7s] w-full`}>
         <img
-          className="h-full w-full transition-transform duration-[.7s]"
+          className="h-full w-full transition-transform object-cover duration-[.7s]"
           loading="lazy"
           src={"/images/" + imgUrl + ".png"}
           alt=""
@@ -43,12 +47,13 @@ const CommonContainer = ({
       <div
         className={`py-[.625rem] text-[.75rem] bg-white relative z-10 ${poppins.className} font-[400] pl-[.75rem] pr-[1.1875rem]`}
       >
-        <Link
+        <a
           href={link}
+          target="_blank"
           className={`text-black transition-[.4s] hover:text-[#76063D] focus:text-[#76063D]`}
         >
           {title}
-        </Link>
+        </a>
         <hr className="my-[5.5px]" />
         <p className="text-[#000000B2]">{subtitle}</p>
       </div>
