@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 
 import SVGClient from "@/components/SVGClient";
 import { Montserrat } from "next/font/google";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -15,7 +18,7 @@ const linkInfo = [
   },
   {
     title: "About Me",
-    href: "/",
+    href: "/about",
   },
   {
     title: "WiD Community",
@@ -35,6 +38,7 @@ const linkInfo = [
   },
 ];
 const Header = () => {
+  const pathname = usePathname();
   return (
     <header
       className={`py-[1rem] sticky bg-white z-[500] top-0 xl:px-[5rem] ${montserrat.className}`}
@@ -49,14 +53,16 @@ const Header = () => {
               className="min-w-max m-0 text-[#76063D]"
               key={"nav__item__" + index}
             >
-              <a
-                className="min-w-max min-h-max conic-nav-bg rounded-[1.5rem] flex justify-center items-center m-0"
+              <Link
+                className={`min-w-max min-h-max ${
+                  pathname === item.href ? "conic-nav-bg" : ""
+                } rounded-[1.5rem] flex justify-center items-center m-0`}
                 href={item.href}
               >
                 <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white px-[1rem] text-[0.9375rem] ">
                   {item.title}
                 </div>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

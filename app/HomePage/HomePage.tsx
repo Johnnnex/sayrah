@@ -243,6 +243,10 @@ const HomePage = () => {
               />
             ))}
           </div>
+          <button className="hover:bg-[#76063D] mt-[2.5rem] w-fit mx-auto btn bg-white focus:bg-[#76063D] text-[#76063D] focus:text-white transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg hover:text-white font-[400] flex px-[1.5rem] py-[.7rem]">
+            See More
+            <SVGClient src="/svg/arrow-up-right-01.svg" />
+          </button>
         </div>
       </section>
     </main>

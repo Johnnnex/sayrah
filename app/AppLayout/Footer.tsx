@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import SVGClient from "@/components/SVGClient";
 import { Syne, Poppins, Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const syne = Syne({
   weight: ["400", "500", "600", "700", "800"],
@@ -74,12 +75,12 @@ const Footer = () => {
           <ul className="flex items-center gap-[2.5rem]">
             {linkInfo.map((e, index) => (
               <li key={"footer__link__" + index}>
-                <a
+                <Link
                   href={e.href}
                   className={`text-[.75rem] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
                 >
                   {e.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -88,15 +89,15 @@ const Footer = () => {
         <div
           className={`w-fit flex text-[0.75rem] text-[#76063D] items-center gap-[2.5rem] ml-auto ${poppins.className}`}
         >
-          <a
+          <Link
             href=""
             className="font-[400] tracking-[0.24px] a transition-[.4s]"
           >
             EULA
-          </a>
-          <a href="/" className="font-[400] a tracking-[0.24px]">
+          </Link>
+          <Link href="/" className="font-[400] a tracking-[0.24px]">
             Privacy Policy
-          </a>
+          </Link>
         </div>
       </section>
     </footer>

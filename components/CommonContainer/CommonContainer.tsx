@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Poppins } from "next/font/google";
 import SVGClient from "../SVGClient";
+import Link from "next/link";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -42,12 +43,12 @@ const CommonContainer = ({
       <div
         className={`py-[.625rem] text-[.75rem] bg-white relative z-10 ${poppins.className} font-[400] pl-[.75rem] pr-[1.1875rem]`}
       >
-        <a
+        <Link
           href={link}
           className={`text-black transition-[.4s] hover:text-[#76063D] focus:text-[#76063D]`}
         >
           {title}
-        </a>
+        </Link>
         <hr className="my-[5.5px]" />
         <p className="text-[#000000B2]">{subtitle}</p>
       </div>

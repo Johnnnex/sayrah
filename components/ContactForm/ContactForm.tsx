@@ -1,6 +1,7 @@
 import { Montserrat, Poppins, Syne } from "next/font/google";
 import Input from "../Input";
 import SVGClient from "../SVGClient";
+import Link from "next/link";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -118,7 +119,7 @@ const ContactForm = () => {
                   { socialIcons: "telegram-one", socialLinks: "" },
                   { socialIcons: "discord", socialLinks: "" },
                 ].map(({ socialIcons, socialLinks }, index) => (
-                  <a
+                  <Link
                     href={socialLinks}
                     key={"icon__" + index}
                     className="h-fit w-fit"
@@ -127,7 +128,7 @@ const ContactForm = () => {
                       className="aspect-[1/1] hover:text-[#76063D] hover:bg-white focus:text-[#76063D] focus:bg-white transition-[.4s] rounded-[50%] text-white border p-[6px] items-center justify-center flex"
                       src={"/svg/" + socialIcons + ".svg"}
                     />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
