@@ -89,7 +89,7 @@ const featured: {
 const About = () => {
   return (
     <>
-      <Hero chipTitle="About Me" bgImg="about.png" />
+      <Hero chipTitle="About Me" bgImg="/images/about.png" />
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center">
         <div className="max-w-[109.375rem] w-[80%] flex gap-x-[4.5rem] mx-auto py-[5rem]">
           <h2
