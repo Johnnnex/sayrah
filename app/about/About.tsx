@@ -138,7 +138,7 @@ const About = () => {
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center">
         <div className="flex flex-wrap gap-[1.625rem] max-w-[109.375rem] w-[90%] mx-auto pt-[4.375rem] pb-[6.375rem]">
           <h2
-            className={`${syne.className} h-fit relative text-[4rem] font-[500] ordinal text-[#76063D]`}
+            className={`${syne.className} h-fit relative text-[4rem] grow basis-[20%] font-[500] ordinal text-[#76063D]`}
           >
             Featured
             <SVGClient

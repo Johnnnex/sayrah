@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Hero from "@/components/Hero";
 import SVGClient from "@/components/SVGClient";
-import { Poppins, Syne } from "next/font/google";
+import { ABeeZee, Poppins, Syne } from "next/font/google";
 import { Fragment } from "react";
 
 const syne = Syne({
@@ -11,6 +12,43 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
+const abeeze = ABeeZee({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const testimonialData: {
+  testimonial: string;
+  user: string;
+  imgName: string;
+}[] = [
+  {
+    testimonial: `“WID changed my view about blockchain and crypto. A community blessed with great tutors that are patient in explaining and carrying their students along. My Defi journey has been a great one. It all started with #WID”`,
+    user: "Nemi James",
+    imgName: "nemi",
+  },
+  {
+    testimonial: `“WID was the start of my defi journey and the start of my millionaire journey. I discovered so many opportunities that i can leverage to make myself financially stable in the defi space. The biggest motivation is the fact that i'm taught by women who have broken records, which gives me the inspiration to do more. Then being part of a community that looks out for you can't be overemphasized as it speeds up my growth.”`,
+    user: "Uwadimma Christabel",
+    imgName: "uwadimma",
+  },
+  {
+    testimonial: `“The WID team has not only taught me about Defi but also help me stand my feet in the decentralized finance space through the process of close watch and constant follow-up even after the class. After the class, i have been able to get jobs that have given me funds to get gadgets to improve my tech journey, funds to process admission, and also my upkeep. A big thanks to the team for also reaching out and helping.”`,
+    user: "Lady Benny",
+    imgName: "benny",
+  },
+  {
+    testimonial: `“Joining women in Defi was actually one of my best gift the Lord gave me the year 2022. It changed my life and made me meet a lot of important people that i could call sisters. They really make the community look like family. I am grateful for having the best tutors also.”`,
+    user: "Swizzabane Mide",
+    imgName: "mide",
+  },
+  {
+    testimonial: `“I was onboarded into the web3 space by the WID community in April this year; that was the best thing that happened to me. Before now, I had no knowledge of what web3 is or what the decentralized space is all about.The only knowledge I had on crypto then was buying low and selling high 😅. A big thank you to the founder of WomenInDefi and the core team members, WID was a game changer for me. Today, I'm an ardent believer in Decentralized Finance”`,
+    user: "Vivian Adeniyi",
+    imgName: "mide",
+  },
+];
+
 const Community = () => {
   return (
     <>
@@ -166,7 +204,53 @@ const Community = () => {
           ))}
         </div>
       </section>
-      <section className="pt-[7.5rem]"></section>
+      <section className="pt-[7.5rem] pb-[4.375rem]">
+        <div className="max-w-[109.375rem] w-[90%] flex flex-wrap gap-x-[2.5rem] items-center gap-y-[1.25rem] mx-auto">
+          <div
+            className={`basis-[30%] flex-1 text-[#000] text-[4rem] ordinal ${syne.className} h-fit font-[500]`}
+          >
+            What{" "}
+            <span className="relative">
+              they
+              <SVGClient
+                className="absolute bottom-0 left-0"
+                src="/svg/line-12.svg"
+              />
+            </span>{" "}
+            <span className="text-[#76063D]">say</span>
+            ...
+          </div>
+          {testimonialData.map(({ imgName, testimonial, user }, index) => (
+            <div
+              key={"testimonial__" + index}
+              className={`relative overflow-hidden flex-1 basis-[30%]`}
+            >
+              <p className="min-h-[13.4375rem]  py-[1rem] bg-[#FDFCFC] px-[1rem] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] text-[0.875rem] text-center tracking-[0.28px] text-black">
+                {testimonial}
+              </p>
+              <div className="bg-white relative z-[600] h-[4px] w-full"></div>
+              <div className="py-[.75rem] bg-[#FDFCFC] border-[.25px] border-[#0000000D] flex items-center gap-[4px] justify-center rounded-b-[8px] w-full">
+                <img
+                  src={`/images/${imgName}.png`}
+                  className="rounded-[50%] w-[1.75rem] aspect-square"
+                  alt="Testimonial Image"
+                />
+                <div className="">
+                  <h6 className="text-[1rem] font-[500] tracking-[.64px] text-[#000000D9]">
+                    {user}
+                  </h6>
+                </div>
+              </div>
+              <p
+                style={{ transition: "inset 1s" }}
+                className={`${abeeze.className} text-[20rem] max-h-[10rem] text-[#0000000D] z-[500] right-[-20px] font-[400] absolute bottom-[3rem]`}
+              >
+                “
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };
