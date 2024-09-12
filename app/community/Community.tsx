@@ -1,8 +1,9 @@
+import Counter from "@/components/Counter";
 /* eslint-disable @next/next/no-img-element */
 import Hero from "@/components/Hero";
 import SVGClient from "@/components/SVGClient";
 import { ABeeZee, Poppins, Syne } from "next/font/google";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 const syne = Syne({
   weight: ["400", "500", "600", "700", "800"],
@@ -139,69 +140,7 @@ const Community = () => {
         className={`bg-[url(/svg/noise-bg.svg)] ${syne.className} bg-cover bg-center py-[1.75rem]`}
       >
         <div className="max-w-[109.375rem] items-center justify-between flex w-[80%] mx-auto">
-          {[
-            {
-              numeral: "40,000",
-              text: (
-                <>
-                  Social Media
-                  <br />
-                  Reach
-                </>
-              ),
-            },
-            {
-              numeral: "3,000",
-              text: (
-                <>
-                  Community
-                  <br />
-                  Members
-                </>
-              ),
-            },
-            {
-              numeral: "5",
-              text: (
-                <>
-                  Physical Events
-                  <br />
-                  Hosted
-                </>
-              ),
-            },
-            {
-              numeral: "20",
-              text: (
-                <>
-                  Community Chapters
-                  <br />
-                  Nationwide
-                </>
-              ),
-            },
-            {
-              numeral: "10",
-              text: (
-                <>
-                  DeFi
-                  <br />
-                  Cohorts
-                </>
-              ),
-            },
-          ].map(({ numeral, text }, index) => (
-            <Fragment key={"Metric__" + index}>
-              <div className="text-white basis-[15.375rem]">
-                <p className="text-[2.5rem] leading-[80%] text-center font-[600]">
-                  {numeral}+
-                </p>
-                <p className="text-[1.5rem] w-[100%] mx-auto text-center">
-                  {text}
-                </p>
-              </div>
-            </Fragment>
-          ))}
+          <Counter />
         </div>
       </section>
       <section className="pt-[7.5rem] pb-[4.375rem]">

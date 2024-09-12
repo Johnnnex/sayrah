@@ -9,7 +9,7 @@ const bgImgUrls = [
   "hero-two",
   "hero-three",
   "hero-four",
-  "hero-five",
+  "dev-x",
   "hero-six",
   "hero-seven",
 ];
