@@ -80,10 +80,14 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <button className="bg-[#76063D] btn hover:bg-white focus:bg-white hover:text-[#76063D] focus:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]">
+        <Link
+          style={{ border: "1px solid #76063D" }}
+          href="/contact"
+          className="bg-[#76063D] btn hover:bg-white focus:bg-white hover:text-[#76063D] focus:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]"
+        >
           Contact Me
           <SVGClient src="/svg/navigation-03.svg" />
-        </button>
+        </Link>
       </section>
       <hr className="mt-[.75rem] bg-[#76063D40] h-[.4px]" />
     </header>
