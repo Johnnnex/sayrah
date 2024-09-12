@@ -114,6 +114,9 @@ a {
 .img-hover:hover img {
   transform: scale(130%);
 }
+.img-hover:hover .svg-parent {
+  opacity: 0.75;
+}
 
 .hero-slider {
   position: relative;

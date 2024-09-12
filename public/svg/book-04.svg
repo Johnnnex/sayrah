@@ -1,8 +1,8 @@
 <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="book-04">
-<path id="Vector" d="M10.6001 6.59375H21.9334C23.038 6.59375 23.9334 7.48918 23.9334 8.59375V10.5938" stroke="currentColor" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M20.6001 17.2598H12.6001" stroke="currentColor" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_3" d="M16.6001 22.5938H12.6001" stroke="currentColor" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_4" d="M25.2631 2.66602L9.01065 2.66604C8.34804 2.66604 7.6703 2.76327 7.13469 3.15644C5.4364 4.40307 4.12761 7.18336 6.77061 9.69348C7.5127 10.3983 8.54998 10.6538 9.56965 10.6538H24.9784C26.0364 10.6538 27.9338 10.8052 27.9338 14.0357V23.9743C27.9338 26.9336 25.5475 29.3327 22.6039 29.3327H10.5637C7.62557 29.3327 5.48868 27.2561 5.31988 24.0944L5.27522 6.88786" stroke="currentColor" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round"/>
+<path id="Vector" d="M10.6001 6.59375H21.9334C23.038 6.59375 23.9334 7.48918 23.9334 8.59375V10.5938" stroke="currentColor"  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M20.6001 17.2598H12.6001" stroke="currentColor"  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M16.6001 22.5938H12.6001" stroke="currentColor"  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M25.2631 2.66602L9.01065 2.66604C8.34804 2.66604 7.6703 2.76327 7.13469 3.15644C5.4364 4.40307 4.12761 7.18336 6.77061 9.69348C7.5127 10.3983 8.54998 10.6538 9.56965 10.6538H24.9784C26.0364 10.6538 27.9338 10.8052 27.9338 14.0357V23.9743C27.9338 26.9336 25.5475 29.3327 22.6039 29.3327H10.5637C7.62557 29.3327 5.48868 27.2561 5.31988 24.0944L5.27522 6.88786" stroke="currentColor"  stroke-width="2.5" stroke-linecap="round"/>
 </g>
 </svg>

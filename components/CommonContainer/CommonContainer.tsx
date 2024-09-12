@@ -39,7 +39,10 @@ const CommonContainer = ({
         <span className="bg-[#0000007F] text-[#ADB77E40] transition-colors duration-[.7s] top-0 left-0 absolute h-full w-full">
           <span className="flex transition-colors text-current duration-[.7s] items-center justify-center h-full w-full">
             {!!iconName ? (
-              <SVGClient className="" src={"/svg/" + iconName + ".svg"} />
+              <SVGClient
+                className="opacity-25 svg-parent transition-opacity duration-300"
+                src={"/svg/" + iconName + ".svg"}
+              />
             ) : null}
           </span>
         </span>
