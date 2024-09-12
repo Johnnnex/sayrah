@@ -30,7 +30,7 @@ const linkInfo = [
   },
   {
     title: "Blog",
-    href: "/",
+    href: "https://medium.com/@sarahidahosa",
   },
   {
     title: "Media Kit",
@@ -53,16 +53,30 @@ const Header = () => {
               className="min-w-max m-0 text-[#76063D]"
               key={"nav__item__" + index}
             >
-              <Link
-                className={`min-w-max min-h-max ${
-                  pathname === item.href ? "conic-nav-bg" : "reg-nav-bg"
-                } rounded-[1.5rem] flex justify-center items-center m-0`}
-                href={item.href}
-              >
-                <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white px-[1rem] text-[0.9375rem] ">
-                  {item.title}
-                </div>
-              </Link>
+              {item.title === "Blog" ? (
+                <a
+                  target="_blank"
+                  className={`min-w-max min-h-max ${
+                    pathname === item.href ? "conic-nav-bg" : "reg-nav-bg"
+                  } rounded-[1.5rem] flex justify-center items-center m-0`}
+                  href={item.href}
+                >
+                  <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white px-[1rem] text-[0.9375rem] ">
+                    {item.title}
+                  </div>
+                </a>
+              ) : (
+                <Link
+                  className={`min-w-max min-h-max ${
+                    pathname === item.href ? "conic-nav-bg" : "reg-nav-bg"
+                  } rounded-[1.5rem] flex justify-center items-center m-0`}
+                  href={item.href}
+                >
+                  <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white px-[1rem] text-[0.9375rem] ">
+                    {item.title}
+                  </div>
+                </Link>
+              )}
             </li>
           ))}
         </ul>
