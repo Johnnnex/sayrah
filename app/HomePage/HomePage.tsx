@@ -184,14 +184,11 @@ const HomePage = () => {
           </div>
           <Link
             href="/about"
-            style={{ border: "1px solid #76063D" }}
-            className="hover:bg-[#76063D] ~mt-[20px]/[40px] w-fit mx-auto btn bg-white focus:bg-[#76063D] text-[#76063D] focus:text-white transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg hover:text-white font-[400] flex px-[24px] py-[11px]"
+            style={{ border: "1px solid #76063D", display: "flex" }}
+            className="hover:bg-[#76063D] react-svg ~mt-[20px]/[40px] w-fit mx-auto btn bg-white focus:bg-[#76063D] text-[#76063D] focus:text-white transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg hover:text-white font-[400] flex px-[24px] py-[11px]"
           >
             See More
-            <SVGClient
-              className="~w-[16px]/[24px] ~h-[16px]/[24px]"
-              src="/svg/arrow-up-right-01.svg"
-            />
+            <SVGClient className="" src="/svg/arrow-up-right-01.svg" />
           </Link>
         </div>
       </section>
