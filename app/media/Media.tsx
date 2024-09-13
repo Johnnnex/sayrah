@@ -137,10 +137,10 @@ const Media = () => {
   return (
     <>
       <Hero bgImg="/images/dev-x.png" chipTitle="MEDIA AND FEATURES" />
-      <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover pb-[2.5rem] pt-[5rem]">
-        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+      <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover pb-[40px] ~pt-[32px]/[80px]">
+        <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="ARTICLES" />
-          <div className="my-[2.5rem] flex flex-wrap gap-[1.625rem]">
+          <div className="~my-[20px]/[40px] flex flex-wrap gap-[26px]">
             {features.slice(0, 4).map((feature, index) => (
               <CommonContainer
                 key={`article-${index}`}
@@ -152,9 +152,9 @@ const Media = () => {
               />
             ))}
           </div>
-          <div className="flex justify-center mt-[2rem]">
+          <div className="flex justify-center mt-[32px]">
             <button
-              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] text-[1rem] rounded-[1.5rem] flex items-center gap-[.5rem] px-[2.5rem] py-[0.75rem] ${montserrat.className}`}
+              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] ~text-[12px]/[16px] rounded-[24px] flex items-center gap-[8px] px-[40px] py-[12px] ${montserrat.className}`}
             >
               See More
               <SVGClient src="/svg/arrow-up-right-011.svg" />
@@ -162,10 +162,10 @@ const Media = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[url(/svg/noise-bg.svg)] bg-cover bg-center py-[2.5rem]">
-        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+      <section className="bg-[url(/svg/noise-bg.svg)] bg-cover bg-center ~py-[20px]/[40px]">
+        <div className="max-w-[1750px] w-[90%] mx-auto">
           <p
-            className={`text-white text-center text-[1.5rem] font-medium leading-[133.333%] mb-[1.25rem] ${syne.className}`}
+            className={`text-white text-center ~text-[16px]/[24px] font-medium leading-[133.333%] mb-[20px] ${syne.className}`}
           >
             Ready to elevate your next event?
             <br />
@@ -174,18 +174,21 @@ const Media = () => {
           </p>
           <div className="flex justify-center">
             <button
-              className={`bg-[#FFF] btn text-[1rem] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[1.5rem] gap-[.5rem] font-[500] react-svg text-[#76063D] flex px-[1.5rem] py-[.7rem] ${montserrat.className}`}
+              className={`bg-[#FFF] btn ~text-[12px]/[16px] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[24px] gap-[8px] font-[500] react-svg text-[#76063D] flex px-[24px] py-[11px] ${montserrat.className}`}
             >
               Book Me
-              <SVGClient src="/svg/navigation-03.svg" />
+              <SVGClient
+                className="~w-[16px]/[24px] ~h-[16px]/[24px]"
+                src="/svg/navigation-03.svg"
+              />
             </button>
           </div>
         </div>
       </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover pb-[2.5rem] pt-[5rem]">
-        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+      <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover pb-[40px] ~pt-[40px]/[80px]">
+        <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="MEDIA" />
-          <div className="my-[2.5rem] flex flex-wrap gap-[1.625rem]">
+          <div className="~my-[20px]/[40px] flex flex-wrap gap-[26px]">
             {features.slice(0, 4).map((feature, index) => (
               <CommonContainer
                 key={`article-${index}`}
@@ -197,9 +200,9 @@ const Media = () => {
               />
             ))}
           </div>
-          <div className="flex justify-center mt-[2rem]">
+          <div className="flex justify-center mt-[32px]">
             <button
-              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] text-[1rem] rounded-[1.5rem] flex items-center gap-[.5rem] px-[2.5rem] py-[0.75rem] ${montserrat.className}`}
+              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] ~text-[12px]/[16px] rounded-[24px] flex items-center gap-[8px] px-[40px] py-[12px] ${montserrat.className}`}
             >
               See More
               <SVGClient src="/svg/arrow-up-right-011.svg" />
@@ -207,10 +210,10 @@ const Media = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[url(/svg/noise-bg.svg)] bg-cover bg-center py-[2.5rem]">
-        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+      <section className="bg-[url(/svg/noise-bg.svg)] bg-cover bg-center ~py-[20px]/[40px]">
+        <div className="max-w-[1750px] w-[90%] mx-auto">
           <p
-            className={`text-white text-center text-[1.5rem] font-medium leading-[133.333%] mb-[1.25rem] ${syne.className}`}
+            className={`text-white text-center ~text-[16px]/[24px] font-medium leading-[133.333%] mb-[20px] ${syne.className}`}
           >
             Bring your event to life with expert insights on community growth,
             DeFi, and Web3.
@@ -219,37 +222,40 @@ const Media = () => {
           </p>
           <div className="flex justify-center">
             <button
-              className={`bg-[#FFF] btn text-[1rem] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[1.5rem] gap-[.5rem] font-[500] react-svg text-[#76063D] flex px-[1.5rem] py-[.7rem] ${montserrat.className}`}
+              className={`bg-[#FFF] btn ~text-[12px]/[16px] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[24px] gap-[8px] font-[500] react-svg text-[#76063D] flex px-[24px] py-[11px] ${montserrat.className}`}
             >
               Book Me
-              <SVGClient src="/svg/navigation-03.svg" />
+              <SVGClient
+                className="~w-[16px]/[24px] ~h-[16px]/[24px]"
+                src="/svg/navigation-03.svg"
+              />
             </button>
           </div>
         </div>
       </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover py-[2.5rem]">
-        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+      <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover py-[40px]">
+        <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="SPEAKING ENGAGEMENTS" />
-          <div className="my-[2.5rem] flex flex-wrap gap-[0.75rem]">
+          <div className="my-[40px] flex flex-wrap gap-[12px]">
             {engagements.map((engagement, index) => (
               <div
                 key={`engagement-${index}`}
-                className={`basis-[20%] flex-1 p-[1rem] rounded-[12px] border-[0.5px] border-[#76063D80] ${poppins.className}`}
+                className={`xl:basis-[20%] md:basis-[40%] basis-[100%] flex-1 p-[16px] rounded-[12px] border-[0.5px] border-[#76063D80] ${poppins.className}`}
               >
                 <p className="text-[#000000CC] text-[10px] font-semibold tracking-[0.2px]">
                   {engagement.title}{" "}
                   <span className="italic font-normal">{engagement.date}</span>
                 </p>
-                <hr className="my-[0.5rem] border-[#76063D80]" />
+                <hr className="my-[8px] border-[#76063D80]" />
                 <p className="text-[#000000CC] font-semibold text-[10px] leading-[180%]">
                   {engagement.message}
                 </p>
               </div>
             ))}
           </div>
-          <div className="flex justify-center mt-[2rem]">
+          <div className="flex justify-center mt-[32px]">
             <button
-              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] text-[1rem] rounded-[1.5rem] flex items-center gap-[.5rem] px-[2.5rem] py-[0.75rem] ${montserrat.className}`}
+              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] ~text-[12px]/[16px] rounded-[24px] flex items-center gap-[8px] px-[40px] py-[12px] ${montserrat.className}`}
             >
               See More
               <SVGClient src="/svg/arrow-up-right-011.svg" />

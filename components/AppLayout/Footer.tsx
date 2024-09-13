@@ -1,7 +1,10 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
 import SVGClient from "@/components/SVGClient";
 import { Syne, Poppins, Montserrat } from "next/font/google";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const syne = Syne({
   weight: ["400", "500", "600", "700", "800"],
@@ -39,6 +42,7 @@ const linkInfo = [
   },
 ];
 const Footer = () => {
+  const pathname = usePathname();
   return (
     <footer className="bg-white">
       <section className={`~py-[20px]/[40px] text-white bg-[#76063D] `}>
@@ -90,7 +94,9 @@ const Footer = () => {
                 ) : (
                   <Link
                     href={e.href}
-                    className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
+                    className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${
+                      poppins.className
+                    } ${pathname === e.href ? "active" : ""}`}
                   >
                     {e.title}
                   </Link>

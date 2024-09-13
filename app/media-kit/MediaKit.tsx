@@ -11,9 +11,9 @@ const MediaKit = () => {
   return (
     <>
       <Hero bgImg="/images/bg-media.png" chipTitle="MEDIA KIT" />
-      <section className="bg-[#FDF7F2] py-[2.5rem]">
+      <section className="bg-[#FDF7F2] ~py-[20px]/[40px]">
         <p
-          className={`max-w-[109.375rem] w-[90%] mx-auto text-center text-[#000] ${poppins.className} text-[0.875rem] font-normal leading-[228.571%] tracking-[0.28px]`}
+          className={`max-w-[1750px] w-[90%] mx-auto text-center text-[#000] ${poppins.className} ~text-[10px]/[14px] font-normal md:leading-[228.571%] tracking-[0.28px]`}
         >
           Welcome to my Media Kit page! This resource provides media
           professionals, collaborators, and partners with essential information
@@ -26,20 +26,20 @@ const MediaKit = () => {
           and I look forward to connecting with you.
         </p>
       </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[2.5rem]">
-        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[40px]">
+        <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="BIOGRAPHY" />
-          <div className="flex gap-[2.5rem] mt-[5rem] flex-wrap">
-            <figure className="basis-[28%] h-fit ">
+          <div className="flex gap-[40px] ~mt-[20px]/[80px] flex-wrap">
+            <figure className="xl:basis-[28%] basis-[100%] h-fit ">
               <img
                 src="/images/media-pic-1.png"
-                className="h-[33.75rem] w-[100%] rounded-[14px] overflow-hidden object-cover"
+                className="~h-[453.857px]/[540px] md:h-[600px] xl:h-[540px] w-[100%] rounded-[14px] overflow-hidden object-cover"
                 loading="lazy"
                 alt="profile"
               />
             </figure>
             <p
-              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} text-[1rem] font-normal leading-[200%] tracking-[0.32px]`}
+              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px]`}
             >
               Sarah Idahosa is a passionate Community Growth Manager, DeFi
               Advocate, and Web3 Educator based in Nigeria. With a background in
@@ -79,17 +79,17 @@ const MediaKit = () => {
               enthusiasts and DeFi innovators.
             </p>
           </div>
-          <div className="flex gap-[2.5rem] mt-[1rem] flex-wrap">
-            <figure className="basis-[28%] h-fit">
+          <div className="flex gap-[40px] mt-[16px] items-end flex-wrap-reverse">
+            <figure className="xl:basis-[28%] basis-[100%] h-fit">
               <img
                 src="/images/media-pic-2.png"
-                className="h-[33.75rem] w-[100%] rounded-[14px] overflow-hidden object-cover"
+                className="~h-[453.857px]/[540px] md:h-[600px] xl:h-[540px] w-[100%] rounded-[14px] overflow-hidden object-cover"
                 loading="lazy"
                 alt="profile"
               />
             </figure>
             <p
-              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} text-[1rem] font-normal leading-[200%] tracking-[0.32px]`}
+              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px]`}
             >
               Sarah Idahosa is a passionate Community Growth Manager, DeFi
               Advocate, and Web3 Educator based in Nigeria. With a background in
@@ -131,10 +131,10 @@ const MediaKit = () => {
           </div>
         </div>
       </section>
-      <section className="py-[5rem] bg-[linear-gradient(0deg,_#FDF7F2_0%,_#FDF7F2_100%)]">
-        <div className="max-w-[109.375rem] w-[90%] mx-auto">
+      <section className="py-[80px] bg-[linear-gradient(0deg,_#FDF7F2_0%,_#FDF7F2_100%)]">
+        <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="HI-RES IMAGES" />
-          <div className="mt-[2.5rem] flex flex-wrap gap-[1.25rem]">
+          <div className="mt-[40px] flex flex-wrap gap-[20px]">
             {[
               "/images/sarah-1.png",
               "/images/sarah-2.png",
@@ -147,11 +147,11 @@ const MediaKit = () => {
             ].map((src, index) => (
               <figure
                 key={`hi-res-image-${index}`}
-                className="basis-[20%] grow"
+                className="xl:basis-[20%] md:basis-[40%] basis-[100%] grow"
               >
                 <img
                   src={src}
-                  className="w-[100%] h-[26.25rem] rounded-[14px] overflow-hidden object-cover"
+                  className="w-[100%] h-[420px] rounded-[14px] overflow-hidden object-cover"
                   alt={`Sarah Idahosa hi-res image ${index + 1}`}
                 />
               </figure>

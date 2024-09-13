@@ -1,3 +1,4 @@
+import CommunityTestomonial from "@/components/CommunityTestomonial";
 import Counter from "@/components/Counter";
 /* eslint-disable @next/next/no-img-element */
 import Hero from "@/components/Hero";
@@ -55,30 +56,33 @@ const Community = () => {
     <>
       <Hero chipTitle="THE WiD COMMUNITY" bgImg="/svg/wid-community.svg" />
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center">
-        <div className="max-w-[109.375rem] w-[80%] flex gap-x-[4.5rem] mx-auto py-[5rem]">
-          <div className="">
+        <div className="max-w-[1750px] w-[90%] md:w-[80%] flex gap-x-[72px] gap-y-[20px] flex-wrap mx-auto ~py-[32px]/[80px]">
+          <div className="mx-auto xl:ml-0">
             <h2
-              className={`text-[#000] flex-1 min-w-fit ${syne.className} text-[4rem] font-[500] ordinal`}
+              className={`text-[#000] w-fit xl:text-left text-center mx-auto flex-1 min-w-fit ${syne.className} ~text-[24px]/[60px] font-[500] ordinal`}
             >
               The{" "}
               <span className="text-[#76063D] relative">
                 WID
                 <SVGClient
-                  style={{ position: "absolute", top: "-10px", left: "-20px" }}
+                  className="~w-[58.139px]/[185px] ~h-[28.267px]/[92px] absolute ~top-[0]/[-10px] ~left-[0]/[-20px]"
                   src="/svg/circle-sm.svg"
                 />
               </span>
               <br />
               Community
             </h2>
-            <div className="mt-[1.25rem] mx-auto w-fit flex items-center gap-[.5rem]">
+            <div className="~mt-[16px]/[20px] mx-auto w-fit flex items-center gap-[8px]">
               <div
-                className={`text-[1rem] ${poppins.className} flex font-[500] gap-[.5rem] items-center react-svg text-[#76063DCC] leading-[200%]`}
+                className={`text-[16px] ${poppins.className} flex font-[500] ~gap-[4px]/[8px] items-center react-svg text-[#76063DCC] leading-[200%]`}
               >
-                <SVGClient src="/svg/line.svg" />
-                <p className="text-nowrap">Follow Us</p>
+                <SVGClient
+                  className="~w-[12px]/[28px] h-[2px]"
+                  src="/svg/line.svg"
+                />
+                <p className="text-nowrap ~text-[10px]/[16px]">Follow Us</p>
               </div>
-              <div className="flex items-center gap-[.5rem]">
+              <div className="flex items-center gap-[8px]">
                 {[
                   { socialIcons: "twitter", socialLinks: "" },
                   { socialIcons: "instagram", socialLinks: "" },
@@ -104,14 +108,17 @@ const Community = () => {
               href="https://womenindefi.org/"
               target="_blank"
               style={{ border: "1px solid #76063D" }}
-              className="bg-[#76063D] btn hover:bg-white focus:bg-white w-fit mx-auto mt-[1.25rem] hover:text-[#76063D] cursor-pointer focus:text-[#76063D] transition-[.4s] border border-[#76063D] text-[1rem] items-center rounded-[1.5rem] gap-[.5rem] react-svg text-white font-[400] flex px-[1.5rem] py-[.7rem]"
+              className="bg-[#76063D] btn hover:bg-white focus:bg-white w-fit mx-auto mt-[20px] hover:text-[#76063D] cursor-pointer focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] md:text-[14px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px]"
             >
               Visit Website
-              <SVGClient src="/svg/navigation-03.svg" />
+              <SVGClient
+                className="~w-[16px]/[24px] ~h-[16px]/[24px]"
+                src="/svg/navigation-03.svg"
+              />
             </a>
           </div>
           <div
-            className={`basis-[53.75rem] text-[1rem] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className}`}
+            className={`basis-[560px] text-[16px] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className}`}
           >
             {[
               {
@@ -137,57 +144,62 @@ const Community = () => {
         </div>
       </section>
       <section
-        className={`bg-[url(/svg/noise-bg.svg)] ${syne.className} bg-cover bg-center py-[1.75rem]`}
+        className={`bg-[url(/svg/noise-bg.svg)] ${syne.className} bg-cover bg-center ~py-[20px]/[28px]`}
       >
-        <div className="max-w-[109.375rem] items-center justify-between flex w-[80%] mx-auto">
+        <div className="max-w-[1750px] items-center gap-y-[40px] flex-wrap justify-between flex w-[90%] md:w-[80%] mx-auto">
           <Counter />
         </div>
       </section>
-      <section className="pt-[7.5rem] pb-[4.375rem]">
-        <div className="max-w-[109.375rem] w-[90%] flex flex-wrap gap-x-[2.5rem] items-center gap-y-[1.25rem] mx-auto">
+      <section className="~pt-[32px]/[120px] ~pb-[40px]/[70px]">
+        <div className="max-w-[1750px] w-[90%] flex flex-wrap gap-x-[40px] items-center gap-y-[20px] mx-auto">
           <div
-            className={`basis-[30%] flex-1 text-[#000] text-[4rem] ordinal ${syne.className} h-fit font-[500]`}
+            className={`basis-[40%] xl:basis-[30%] flex-1 text-center xl:text-left text-[#000] xl:text-[64px] ~text-[24px]/[60px] ordinal ${syne.className} h-fit font-[500]`}
           >
             What{" "}
             <span className="relative">
               they
               <SVGClient
-                className="absolute bottom-0 left-0"
+                className="absolute bottom-0 ~w-[51.974px]/[155px] ~h-[5.775px]/[21px] left-0"
                 src="/svg/line-12.svg"
               />
             </span>{" "}
+            <br />
             <span className="text-[#76063D]">say</span>
             ...
           </div>
+
           {testimonialData.map(({ imgName, testimonial, user }, index) => (
             <div
               key={"testimonial__" + index}
-              className={`relative overflow-hidden flex-1 basis-[30%]`}
+              className={`relative md:block hidden overflow-hidden flex-1 basis-[40%] xl:basis-[30%]`}
             >
-              <p className="min-h-[13.4375rem]  py-[1rem] bg-[#FDFCFC] px-[1rem] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] text-[0.875rem] text-center tracking-[0.28px] text-black">
+              <p className="min-h-[215px] py-[16px] bg-[#FDFCFC] px-[16px] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] text-[14px] text-center tracking-[0.28px] text-black">
                 {testimonial}
               </p>
               <div className="bg-white relative z-[600] h-[4px] w-full"></div>
-              <div className="py-[.75rem] bg-[#FDFCFC] border-[.25px] border-[#0000000D] flex items-center gap-[4px] justify-center rounded-b-[8px] w-full">
+              <div className="py-[12px] bg-[#FDFCFC] border-[.25px] border-[#0000000D] flex items-center gap-[4px] justify-center rounded-b-[8px] w-full">
                 <img
                   src={`/images/${imgName}.png`}
-                  className="rounded-[50%] w-[1.75rem] aspect-square"
+                  className="rounded-[50%] w-[28px] aspect-square"
                   alt="Testimonial Image"
                 />
                 <div className="">
-                  <h6 className="text-[1rem] font-[500] tracking-[.64px] text-[#000000D9]">
+                  <h6 className="text-[16px] font-[500] tracking-[.64px] text-[#000000D9]">
                     {user}
                   </h6>
                 </div>
               </div>
               <p
                 style={{ transition: "inset 1s" }}
-                className={`${abeeze.className} text-[20rem] max-h-[10rem] text-[#0000000D] z-[500] right-[-20px] font-[400] absolute bottom-[3rem]`}
+                className={`${abeeze.className} text-[320px] max-h-[160px] text-[#0000000D] z-[500] right-[-20px] font-[400] absolute bottom-[48px]`}
               >
                 “
               </p>
             </div>
           ))}
+        </div>
+        <div className="max-w-[1750px] overflow-hidden mx-auto">
+          <CommunityTestomonial />
         </div>
       </section>
     </>
