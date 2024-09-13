@@ -21,16 +21,16 @@ const Input = ({
   return !!variant && variant === "outlined" ? (
     <div
       className={`input-container ${
-        !!label ? "h-[55px]" : "h-fit"
+        !!label ? "~h-[32px]/[55px]" : "h-fit"
       }  text-[#00000050] flex flex-col justify-between ${poppins.className}`}
     >
       {!!label ? (
-        <p className="text-[0.75rem] text-[#000] leading-[166.667%] font-[500]">
+        <p className="~text-[10px]/[12px] text-[#000] ~leading-[126.05%]/[166.667%] font-[500]">
           {label}
         </p>
       ) : null}
       <input
-        className={`border-b outline-none bg-transparent w-full text-[0.875rem] font-[500] leading-[142.857%] text-[#8D8D8D] placeholder:text-[#8D8D8D90]`}
+        className={`border-b outline-none bg-transparent w-full ~text-[10px]/[14px] font-[500] leading-[142.857%] text-[#8D8D8D] placeholder:text-[#8D8D8D90]`}
         placeholder={placeholder}
         type={!!type ? type : "text"}
       />

@@ -43,7 +43,7 @@ const Header = () => {
     <header
       className={`py-[1rem] sticky bg-white z-[500] top-0 xl:px-[5rem] ${montserrat.className}`}
     >
-      <section className="flex items-center justify-between">
+      {/* <section className="flex items-center justify-between">
         <figure>
           <img src="/svg/logo.svg" alt="Logo" />
         </figure>
@@ -89,7 +89,7 @@ const Header = () => {
           <SVGClient src="/svg/navigation-03.svg" />
         </Link>
       </section>
-      <hr className="mt-[.75rem] bg-[#76063D40] h-[.4px]" />
+      <hr className="mt-[.75rem] bg-[#76063D40] h-[.4px]" /> */}
     </header>
   );
 };

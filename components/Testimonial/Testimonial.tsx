@@ -76,31 +76,31 @@ const Testimonial = () => {
   return (
     <section className="embla" ref={emblaRef}>
       <div
-        className={`embla__container pt-[80px] flex items-center ${poppins.className}`}
+        className={`embla__container ~pt-[40px]/[80px] flex items-center ${poppins.className}`}
       >
         {testimonialData.map(({ imgName, testimonial, role, user }, index) => (
           <div
             key={"testimonial__" + index}
             style={{ transition: "margin 1s" }}
-            className={`embla__slide mr-[40px] min-w-0 relative overflow-hidden flex-shrink-0 flex-grow-0 basis-[620px] ${
-              index === activeIndex ? "mt-[-80px]" : ""
+            className={`embla__slide mr-[40px] min-w-0 relative overflow-hidden flex-shrink-0 flex-grow-0 ~basis-[353px]/[620px] ${
+              index === activeIndex ? "~mt-[-40px]/[-80px]" : ""
             }`}
           >
-            <p className="h-[10.625rem] bg-[#FDFCFC] px-[1rem] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] text-[0.875rem] text-center tracking-[0.28px] text-black">
+            <p className="h-[10.625rem] bg-[#FDFCFC] px-[1rem] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] ~text-[10px]/[14px] text-center tracking-[0.28px] text-black">
               {testimonial}
             </p>
             <div className="bg-white relative z-[600] h-[4px] w-full"></div>
             <div className="py-[.75rem] bg-[#FDFCFC] border-[.25px] border-[#0000000D] flex items-center gap-[8px] justify-center rounded-b-[8px] w-full">
               <img
-                src={`/svg/${imgName}.svg`}
-                className="rounded-[50%]"
+                src={`/images/${imgName}.png`}
+                className="rounded-[50%] ~w-[30px]/[40px] aspect-square"
                 alt="Testimonial Image"
               />
               <div className="">
-                <h6 className="mb-[-4px] text-[1.25rem] font-[500] tracking-[.8px] text-[#000000D9]">
+                <h6 className="mb-[-4px] ~text-[14px]/[20px] font-[500] tracking-[.8px] text-[#000000D9]">
                   {user}
                 </h6>
-                <p className="text-[#00000080] font-[500] text-[.75rem] tracking-[.48px]">
+                <p className="text-[#00000080] font-[500] ~text-[10px]/[12px] tracking-[.48px]">
                   {role}
                 </p>
               </div>
@@ -114,29 +114,29 @@ const Testimonial = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center w-fit mx-auto pb-[20px] gap-[.5rem]">
+      <div className="flex items-center w-fit mx-auto ~pb-[10px]/[20px] gap-[.5rem]">
         {Array.from({ length: testimonialData.length }, (_, index) => (
           <button
             disabled={index === activeIndex}
             key={"pagination__" + index}
             className={`transition-[.8s] aspect-square ${
               index === activeIndex
-                ? "bg-[#76063D] w-[24px] rounded-[20px] h-[12px]"
-                : "bg-[#76063D33] rounded-[50%] w-[12px] h-[12px]"
+                ? "bg-[#76063D] ~w-[16px]/[24px] rounded-[20px] ~h-[8px]/[12px]"
+                : "bg-[#76063D33] rounded-[50%] ~w-[8px]/[12px] ~h-[8px]/[12px]"
             }`}
             onClick={() => emblaApi?.scrollTo(index)}
           />
         ))}
       </div>
-      <div className="flex w-fit gap-[1.25rem] mx-auto">
+      <div className="w-fit md:flex hidden gap-[1.25rem] mx-auto">
         <button
-          className="embla__prev aspect-[1/1] hover:bg-transparent hover:text-[#76063D] border-[#76063D] border transition-[.4s] w-[2.875rem] text-white flex items-center justify-center react-svg bg-[#76063D] rounded-[50%]"
+          className="embla__prev aspect-square hover:bg-transparent hover:text-[#76063D] border-[#76063D] border transition-[.4s] ~w-[32px]/[46px] text-white flex items-center justify-center react-svg bg-[#76063D] rounded-[50%]"
           onClick={scrollPrev}
         >
           <SVGClient src="/svg/arr-left.svg" />
         </button>
         <button
-          className="embla__next aspect-[1/1] hover:bg-transparent hover:text-[#76063D] border-[#76063D] border transition-[.4s] w-[2.875rem] text-white flex items-center justify-center react-svg bg-[#76063D] rounded-[50%]"
+          className="embla__next aspect-square hover:bg-transparent hover:text-[#76063D] border-[#76063D] border transition-[.4s] ~w-[32px]/[46px] text-white flex items-center justify-center react-svg bg-[#76063D] rounded-[50%]"
           onClick={scrollNext}
         >
           <SVGClient src="/svg/arr-right.svg" />
