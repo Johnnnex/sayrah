@@ -30,7 +30,7 @@ const Input = ({
         </p>
       ) : null}
       <input
-        className={`border-b outline-none bg-transparent w-full ~text-[10px]/[14px] font-[500] leading-[142.857%] text-[#8D8D8D] placeholder:text-[#8D8D8D90]`}
+        className={`border-b outline-none bg-transparent w-full ~text-[10px]/[14px] leading-[142.857%] text-[#8D8D8D] placeholder:text-[#8D8D8D90]`}
         placeholder={placeholder}
         type={!!type ? type : "text"}
       />

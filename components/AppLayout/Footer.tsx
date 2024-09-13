@@ -23,71 +23,99 @@ const linkInfo = [
   },
   {
     title: "About",
-    href: "/",
+    href: "/about",
   },
   {
     title: "Community",
-    href: "/",
+    href: "/community",
   },
   {
     title: "Speaking",
-    href: "/",
+    href: "/features",
   },
   {
     title: "Blog",
-    href: "/",
+    href: "https://medium.com/@sarahidahosa",
   },
 ];
 const Footer = () => {
   return (
     <footer className="bg-white">
-      <section className={`py-[2.5rem] text-white bg-[#76063D] `}>
+      <section className={`~py-[20px]/[40px] text-white bg-[#76063D] `}>
         <h3
-          className={` text-[1.5rem] font-[500] ${syne.className} text-center leading-[133.333%]`}
+          className={`~text-[16px]/[24px] font-[500] ${syne.className} text-center md:leading-[133.333%]`}
         >
           Join my Crypto Newsletter.
         </h3>
         <p
-          className={`text-center leading-[266.667%] mb-[1.25rem] ${poppins.className}`}
+          className={`text-center ~text-[12px]/[16px] md:leading-[266.667%] ~mb-[16px]/[20px] ${poppins.className}`}
         >
           Not just another boring newsletter, I promise... I&apos;d be seeing
           you around.
         </p>
-        <div className="w-fit mx-auto flex items-center gap-[1.25rem]">
+        <div className="md:w-fit w-[90%] mx-auto flex items-center ~gap-[8px]/[20px]">
           <input
             placeholder="Your Email Address"
-            className={`py-[.625rem] placeholder:text-[#ffffff80] text-[.75rem] h-[3.25rem] px-[1.25rem] leading-[266.667%] font-[400] bg-transparent outline-none border border-[#FFF] rounded-[1.5rem] w-[28.125rem] ${poppins.className}`}
+            className={`py-[10px] placeholder:text-[#ffffff80] text-[12px] ~h-[40px]/[52px] px-[20px] leading-[266.667%] font-[400] bg-transparent outline-none border border-[#FFF] rounded-[24px] flex-grow md:w-[450px] ${poppins.className}`}
             type="text"
           />
           <button
-            className={`bg-[#FFF] btn text-[1rem] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[1.5rem] gap-[.5rem] font-[500] react-svg text-[#76063D] flex px-[1.5rem] py-[.7rem] ${montserrat.className}`}
+            className={`bg-[#FFF] btn ~text-[12px]/[16px] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[24px] md:gap-[8px] font-[500] react-svg text-[#76063D] flex px-[24px] py-[11px] ${montserrat.className}`}
           >
-            Subscribe
-            <SVGClient src="/svg/navigation-03.svg" />
+            <span className="hidden md:block">Subscribe</span>
+            <SVGClient
+              className="~w-[16px]/[24px] ~h-[16px]/[24px]"
+              src="/svg/navigation-03.svg"
+            />
           </button>
         </div>
       </section>
-      <section className="pt-[2.5rem] max-w-[109.375rem] mx-auto  pb-[5.0625rem] px-[3.25rem]">
-        <div className="flex items-center justify-between px-[2rem]">
+      <section className="pt-[40px] max-w-[1750px] mx-auto  pb-[81px] ~px-[20px]/[52px]">
+        <div className="flex md:items-center items-start justify-between md:px-[32px]">
           <figure>
             <img src="/svg/logo.svg" alt="Logo" />
           </figure>
-          <ul className="flex items-center gap-[2.5rem]">
+          <ul className="flex flex-col md:flex-row md:items-center md:gap-[40px] gap-[8px]">
             {linkInfo.map((e, index) => (
               <li key={"footer__link__" + index}>
-                <Link
-                  href={e.href}
-                  className={`text-[.75rem] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
-                >
-                  {e.title}
-                </Link>
+                {e.title === "Blog" ? (
+                  <a
+                    href={e.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
+                  >
+                    {e.title}
+                  </a>
+                ) : (
+                  <Link
+                    href={e.href}
+                    className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
+                  >
+                    {e.title}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
+          <div className="md:hidden flex flex-col gap-[8px]">
+            <Link
+              href=""
+              className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
+            >
+              EULA
+            </Link>
+            <Link
+              href="/"
+              className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
+            >
+              Privacy Policy
+            </Link>
+          </div>
         </div>
-        <hr className="mt-[2.5625rem] bg-[#76063D80] mb-[0.765625rem] h-[.4px]" />
+        <hr className="mt-[41px] bg-[#76063D80] mb-[12.25px] h-[.4px]" />
         <div
-          className={`w-fit flex text-[0.75rem] text-[#76063D] items-center gap-[2.5rem] ml-auto ${poppins.className}`}
+          className={`w-fit hidden md:flex text-[12px] text-[#76063D] items-center gap-[40px] ml-auto ${poppins.className}`}
         >
           <Link
             href=""
@@ -99,6 +127,11 @@ const Footer = () => {
             Privacy Policy
           </Link>
         </div>
+        <p
+          className={`text-center text-[#76063D] ~text-[10px]/[12px] font-normal leading-normal tracking-[0.16px] ${poppins.className}`}
+        >
+          &copy; 2024. Some Rights Reserved
+        </p>
       </section>
     </footer>
   );
