@@ -93,7 +93,7 @@ const About = () => {
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center">
         <div className="max-w-[1750px] flex-wrap xl:w-[80%] w-[90%] flex gap-x-[72px] mx-auto ~py-[32px]/[80px]">
           <h2
-            className={`text-[#000] text-center md:text-left ~mb-[20px]/0 flex-1 min-w-fit ${syne.className} 2xl:text-[64px] ~text-[24px]/[60px] font-[500] md:ordinal`}
+            className={`text-[#000] text-center md:text-left ~mb-[20px]/0 flex-1 min-w-fit ${syne.className} 2xl:text-[64px] ~text-[24px]/[60px] font-[500] md:ordinal wow fadeIn`}
           >
             Let&apos;s talk <br />
             <span className="text-[#76063D] relative">
@@ -105,7 +105,7 @@ const About = () => {
             </span>
           </h2>
           <p
-            className={`basis-[760px] ~text-[12px]/[16px] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className}`}
+            className={`basis-[760px] ~text-[12px]/[16px] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className} wow fadeIn`}
           >
             Sarah Idahosa is a versatile professional distinguished for her
             proficiency in Web3 community development, educational initiatives,
@@ -140,9 +140,9 @@ const About = () => {
         </div>
       </section>
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center">
-        <div className="flex flex-wrap gap-[26px] max-w-[1750px] xl:items-start md:items-center w-[90%] mx-auto pt-[70px] pb-[102px]">
+        <div className="flex flex-wrap gap-[26px] max-w-[1750px] xl:items-start md:items-center w-[90%] mx-auto pt-[70px] pb-[102px] wow fadeIn">
           <h2
-            className={`${syne.className} h-fit relative ~text-[24px]/[60px] grow basis-[20%] font-[500] ordinal text-[#76063D]`}
+            className={`${syne.className} h-fit relative ~text-[24px]/[60px] grow basis-[20%] font-[500] ordinal text-[#76063D] wow fadeIn`}
           >
             Featured
             <SVGClient

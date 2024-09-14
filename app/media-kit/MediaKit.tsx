@@ -13,7 +13,7 @@ const MediaKit = () => {
       <Hero bgImg="/images/bg-media.png" chipTitle="MEDIA KIT" />
       <section className="bg-[#FDF7F2] ~py-[20px]/[40px]">
         <p
-          className={`max-w-[1750px] w-[90%] mx-auto text-center text-[#000] ${poppins.className} ~text-[10px]/[14px] font-normal md:leading-[228.571%] tracking-[0.28px]`}
+          className={`max-w-[1750px] w-[90%] mx-auto text-center text-[#000] ${poppins.className} ~text-[10px]/[14px] font-normal md:leading-[228.571%] tracking-[0.28px] wow fadeIn`}
         >
           Welcome to my Media Kit page! This resource provides media
           professionals, collaborators, and partners with essential information
@@ -29,7 +29,7 @@ const MediaKit = () => {
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center py-[40px]">
         <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="BIOGRAPHY" />
-          <div className="flex gap-[40px] ~mt-[20px]/[80px] flex-wrap">
+          <div className="flex gap-[40px] ~mt-[20px]/[80px] flex-wrap wow fadeIn">
             <figure className="xl:basis-[28%] basis-[100%] h-fit ">
               <img
                 src="/images/media-pic-1.png"
@@ -39,7 +39,7 @@ const MediaKit = () => {
               />
             </figure>
             <p
-              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px]`}
+              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
             >
               Sarah Idahosa is a passionate Community Growth Manager, DeFi
               Advocate, and Web3 Educator based in Nigeria. With a background in
@@ -79,7 +79,7 @@ const MediaKit = () => {
               enthusiasts and DeFi innovators.
             </p>
           </div>
-          <div className="flex gap-[40px] mt-[16px] items-end flex-wrap-reverse">
+          <div className="flex gap-[40px] mt-[16px] items-end flex-wrap-reverse wow fadeIn">
             <figure className="xl:basis-[28%] basis-[100%] h-fit">
               <img
                 src="/images/media-pic-2.png"
@@ -89,7 +89,7 @@ const MediaKit = () => {
               />
             </figure>
             <p
-              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px]`}
+              className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
             >
               Sarah Idahosa is a passionate Community Growth Manager, DeFi
               Advocate, and Web3 Educator based in Nigeria. With a background in
@@ -134,7 +134,7 @@ const MediaKit = () => {
       <section className="py-[80px] bg-[linear-gradient(0deg,_#FDF7F2_0%,_#FDF7F2_100%)]">
         <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="HI-RES IMAGES" />
-          <div className="mt-[40px] flex flex-wrap gap-[20px]">
+          <div className="mt-[40px] flex flex-wrap gap-[20px] wow fadeIn">
             {[
               "/images/sarah-1.png",
               "/images/sarah-2.png",
@@ -147,7 +147,7 @@ const MediaKit = () => {
             ].map((src, index) => (
               <figure
                 key={`hi-res-image-${index}`}
-                className="xl:basis-[20%] md:basis-[40%] basis-[100%] grow"
+                className="xl:basis-[20%] md:basis-[40%] basis-[100%] grow wow fadeIn"
               >
                 <img
                   src={src}

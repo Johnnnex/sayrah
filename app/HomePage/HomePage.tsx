@@ -59,12 +59,12 @@ const HomePage = () => {
         <div className="absolute h-full w-full flex items-end top-0 left-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent">
           <div className="2xl:px-[80px] md:px-[40px] px-[20px] max-w-[1750px] mx-auto xl:pb-[67px] pb-[48px] text-white">
             <h1
-              className={`xl:text-[64px] md:text-[56px] text-[48px] 2xl:text-[96px] font-[700] mb-[-12px] uppercase ${montserrat.className}`}
+              className={`xl:text-[64px] wow fadeIn md:text-[56px] text-[48px] 2xl:text-[96px] font-[700] mb-[-12px] uppercase ${montserrat.className}`}
             >
               SARAH IDAHOSA
             </h1>
             <p
-              className={`md:text-[16px] text-[12px] 2xl:text-[28px] md:w-[70%] xl:w-[60%] ${syne.className} font-[700]`}
+              className={`md:text-[16px] text-[12px] 2xl:text-[28px] md:w-[70%] xl:w-[60%] ${syne.className} font-[700] wow fadeIn`}
             >
               Community Growth Manager, DeFi Advocate, Web3 Educator, & Founder;
               Women In DeFi.
@@ -79,17 +79,17 @@ const HomePage = () => {
         <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="ABOUT ME" />
           <div
-            className={`flex ~mt-[16px]/[36px] items-center flex-wrap-reverse md:gap-[60px] ~gap-[20px]/[60px]`}
+            className={`flex ~mt-[16px]/[36px] items-center flex-wrap-reverse md:gap-[60px] ~gap-[20px]/[60px] wow fadeIn`}
           >
-            <div className="basis-[45%] flex-1">
+            <div className="basis-[45%] flex-1 wow fadeIn">
               <h2
-                className={`leading-[normal] text-black ~text-[24px]/[60px] xl:text-[64px] font-[500] ~mb-[11px]/[40px] ${syne.className}`}
+                className={`leading-[normal] wow fadeIn text-black ~text-[24px]/[60px] xl:text-[64px] font-[500] ~mb-[11px]/[40px] ${syne.className}`}
               >
                 Who is <br />
                 <span className="text-[#76063D] ">SARAH IDAHOSA?</span>
               </h2>
               <p
-                className={`${poppins.className} leading-[200%] ~text-[12px]/[16px] mb-[28px] font-[400] text-black`}
+                className={`${poppins.className} leading-[200%] ~text-[12px]/[16px] mb-[28px] font-[400] text-black wow fadeIn`}
               >
                 Sarah Idahosa; (Sayraah) is a versatile professional
                 distinguished for her proficiency in Web3 community development,
@@ -127,11 +127,11 @@ const HomePage = () => {
       <section className="bg-[url(/images/bg.jpg)] py-[80px]">
         <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="my services" />
-          <div className="flex ~gap-y-[20px]/[27px] ~mt-[32px]/[60px] flex-wrap gap-x-[40px]">
+          <div className="flex ~gap-y-[20px]/[27px] ~mt-[32px]/[60px] flex-wrap gap-x-[40px] wow fadeIn">
             {serviceInfo.map(({ svg, text, title }, index) => (
               <div
                 key={"service__" + index}
-                className="md:pt-[20px] py-[12px] basis-[600px] flex-1 border-[.25px] border-[#00000040] md:pb-[44px] rounded-[8px] bg-[#FFF] px-[24px] md:px-[40px]"
+                className="md:pt-[20px] py-[12px] basis-[600px] flex-1 border-[.25px] border-[#00000040] md:pb-[44px] rounded-[8px] bg-[#FFF] px-[24px] md:px-[40px] wow fadeIn"
               >
                 <figure className="aspect-[1/1] mb-[12px] w-[40px] bg-[#76063D] text-white react-svg flex items-center justify-center rounded-[8px] mx-auto">
                   <SVGClient
@@ -140,12 +140,12 @@ const HomePage = () => {
                   />
                 </figure>
                 <h4
-                  className={`text-[20px] ${syne.className} text-[#76063D] text-center mb-[12px]`}
+                  className={`text-[20px] wow fadeIn ${syne.className} text-[#76063D] text-center mb-[12px]`}
                 >
                   {title}
                 </h4>
                 <p
-                  className={`${poppins.className} text-black text-[12px] font-[400]`}
+                  className={`${poppins.className} text-black text-[12px] font-[400] wow fadeIn`}
                 >
                   {text}
                 </p>
@@ -158,7 +158,7 @@ const HomePage = () => {
         <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="TESTIMONIALS" />
         </div>
-        <div className="max-w-[1750px] ~mt-[32px]/[40px] overflow-hidden mx-auto">
+        <div className="max-w-[1750px] ~mt-[32px]/[40px] overflow-hidden mx-auto wow fadeIn">
           <Testimonial />
         </div>
       </section>
@@ -171,7 +171,7 @@ const HomePage = () => {
       <section className="bg-[url(/images/bg-white.jpg)] bg-cover ~py-[40px]/[80px] bg-center">
         <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="features" />
-          <div className="flex gap-y-[28px] ~mt-[32px]/[60px] flex-wrap gap-x-[27px]">
+          <div className="flex gap-y-[28px] ~mt-[32px]/[60px] flex-wrap gap-x-[27px] wow fadeIn">
             {features.map(({ subtitle, url, link, title }, index) => (
               <CommonContainer
                 key={"feature__" + index}

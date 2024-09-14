@@ -67,16 +67,16 @@ const Counter: FC = () => {
         },
       ].map(({ numeral, text }, index) => (
         <Fragment key={"Metric__" + index}>
-          <div className="text-white mx-auto xl:ml-0 basis-[246px]">
+          <div className="text-white mx-auto xl:ml-0 basis-[246px] wow fadeIn">
             <p
               ref={ref}
-              className="~text-[30px]/[40px] leading-[80%] text-center font-[600]"
+              className="~text-[30px]/[40px] leading-[80%] text-center font-[600] wow fadeIn"
             >
               {isClient &&
                 (!!inView ? <CountUp start={0} end={numeral} /> : "")}
               +
             </p>
-            <p className="~text-[20px]/[24px] w-[100%] mx-auto text-center">
+            <p className="~text-[20px]/[24px] w-[100%] mx-auto text-center wow fadeIn">
               {text}
             </p>
           </div>

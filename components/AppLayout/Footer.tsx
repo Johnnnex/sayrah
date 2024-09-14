@@ -47,17 +47,17 @@ const Footer = () => {
     <footer className="bg-white">
       <section className={`~py-[20px]/[40px] text-white bg-[#76063D] `}>
         <h3
-          className={`~text-[16px]/[24px] font-[500] ${syne.className} text-center md:leading-[133.333%]`}
+          className={`~text-[16px]/[24px] font-[500] ${syne.className} text-center md:leading-[133.333%] wow fadeIn`}
         >
           Join my Crypto Newsletter.
         </h3>
         <p
-          className={`text-center ~text-[12px]/[16px] md:leading-[266.667%] ~mb-[16px]/[20px] ${poppins.className}`}
+          className={`text-center ~text-[12px]/[16px] md:leading-[266.667%] ~mb-[16px]/[20px] ${poppins.className} wow fadeIn`}
         >
           Not just another boring newsletter, I promise... I&apos;d be seeing
           you around.
         </p>
-        <div className="md:w-fit w-[90%] overflow-hidden mx-auto flex items-center ~gap-[8px]/[20px]">
+        <div className="md:w-fit w-[90%] overflow-hidden mx-auto flex items-center ~gap-[8px]/[20px] wow fadeIn">
           <input
             placeholder="Your Email Address"
             className={`py-[10px] placeholder:text-[#ffffff80] text-[12px] ~h-[40px]/[52px] px-[20px] leading-[266.667%] font-[400] bg-transparent outline-none border border-[#FFF] rounded-[24px] grow min-w-0 md:w-[450px] ${poppins.className}`}
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
       </section>
       <section className="pt-[40px] max-w-[1750px] mx-auto  pb-[81px] ~px-[20px]/[52px]">
-        <div className="flex md:items-center items-start justify-between md:px-[32px]">
+        <div className="flex md:items-center items-start justify-between md:px-[32px] wow fadeIn">
           <figure className="~w-[100px]/[171.852px]">
             <img src="/svg/logo.svg" alt="Logo" />
           </figure>
@@ -104,7 +104,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <div className="md:hidden flex flex-col gap-[8px]">
+          <div className="md:hidden flex flex-col gap-[8px] wow fadeIn">
             <Link
               href=""
               className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
@@ -121,7 +121,7 @@ const Footer = () => {
         </div>
         <hr className="mt-[41px] bg-[#76063D80] mb-[12.25px] h-[.4px]" />
         <div
-          className={`w-fit hidden md:flex text-[12px] text-[#76063D] items-center gap-[40px] ml-auto ${poppins.className}`}
+          className={`w-fit hidden md:flex text-[12px] text-[#76063D] items-center gap-[40px] ml-auto ${poppins.className} wow fadeIn`}
         >
           <Link
             href=""
@@ -134,7 +134,7 @@ const Footer = () => {
           </Link>
         </div>
         <p
-          className={`text-center text-[#76063D] ~text-[10px]/[12px] font-normal leading-normal tracking-[0.16px] ${poppins.className}`}
+          className={`text-center text-[#76063D] ~text-[10px]/[12px] font-normal leading-normal tracking-[0.16px] ${poppins.className} wow fadeIn`}
         >
           &copy; 2024. Some Rights Reserved
         </p>

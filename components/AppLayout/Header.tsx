@@ -7,6 +7,8 @@ import { Montserrat } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+const isServer = typeof window === "undefined";
+const WOW = !isServer ? require("wow.js") : null;
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -46,6 +48,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
+    new WOW().init();
     const handleScroll = () => {
       if (window.scrollY > 0) {
         if (!scrolled) {
@@ -69,7 +72,7 @@ const Header = () => {
 
   return (
     <header
-      style={{ transition: "all .5s" }}
+      style={{ transition: "all .3s" }}
       className={`${
         !scrolled ? "py-[1rem]" : ""
       } sticky w-full bg-white z-[500] px-[1rem] top-0 xl:px-[5rem] ${

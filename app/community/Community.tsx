@@ -59,7 +59,7 @@ const Community = () => {
         <div className="max-w-[1750px] w-[90%] md:w-[80%] flex gap-x-[72px] gap-y-[20px] flex-wrap mx-auto ~py-[32px]/[80px]">
           <div className="mx-auto xl:ml-0">
             <h2
-              className={`text-[#000] w-fit xl:text-left text-center mx-auto flex-1 min-w-fit ${syne.className} ~text-[24px]/[60px] font-[500] ordinal`}
+              className={`text-[#000] w-fit xl:text-left text-center mx-auto flex-1 min-w-fit ${syne.className} ~text-[24px]/[60px] font-[500] ordinal wow fadeIn`}
             >
               The{" "}
               <span className="text-[#76063D] relative">
@@ -72,7 +72,7 @@ const Community = () => {
               <br />
               Community
             </h2>
-            <div className="~mt-[16px]/[20px] mx-auto w-fit flex items-center gap-[8px]">
+            <div className="~mt-[16px]/[20px] mx-auto w-fit flex items-center gap-[8px] wow fadeIn">
               <div
                 className={`text-[16px] ${poppins.className} flex font-[500] ~gap-[4px]/[8px] items-center react-svg text-[#76063DCC] leading-[200%]`}
               >
@@ -80,9 +80,11 @@ const Community = () => {
                   className="~w-[12px]/[28px] h-[2px]"
                   src="/svg/line.svg"
                 />
-                <p className="text-nowrap ~text-[10px]/[16px]">Follow Us</p>
+                <p className="text-nowrap ~text-[10px]/[16px] wow fadeIn">
+                  Follow Us
+                </p>
               </div>
-              <div className="flex items-center gap-[8px]">
+              <div className="flex items-center gap-[8px] wow fadeIn">
                 {[
                   { socialIcons: "twitter", socialLinks: "" },
                   { socialIcons: "instagram", socialLinks: "" },
@@ -108,7 +110,7 @@ const Community = () => {
               href="https://womenindefi.org/"
               target="_blank"
               style={{ border: "1px solid #76063D" }}
-              className="bg-[#76063D] btn hover:bg-white focus:bg-white w-fit mx-auto mt-[20px] hover:text-[#76063D] cursor-pointer focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] md:text-[14px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px]"
+              className="bg-[#76063D] btn hover:bg-white focus:bg-white w-fit mx-auto mt-[20px] hover:text-[#76063D] cursor-pointer focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] md:text-[14px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px] wow fadeIn"
             >
               Visit Website
               <SVGClient
@@ -118,7 +120,7 @@ const Community = () => {
             </a>
           </div>
           <div
-            className={`basis-[560px] text-[16px] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className}`}
+            className={`basis-[560px] text-[16px] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className} wow fadeIn`}
           >
             {[
               {
@@ -135,8 +137,10 @@ const Community = () => {
               },
             ].map(({ header, text }, index) => (
               <Fragment key={"community__info__" + index}>
-                <h3 className="font-[600] tracking-[0.4px]">{header}</h3>
-                <p>{text}</p>
+                <h3 className="font-[600] tracking-[0.4px] wow fadeIn">
+                  {header}
+                </h3>
+                <p className="wow fadeIn">{text}</p>
                 {index === 2 ? null : <br />}
               </Fragment>
             ))}
@@ -146,14 +150,14 @@ const Community = () => {
       <section
         className={`bg-[url(/svg/noise-bg.svg)] ${syne.className} bg-cover bg-center ~py-[20px]/[28px]`}
       >
-        <div className="max-w-[1750px] items-center gap-y-[40px] flex-wrap justify-between flex w-[90%] md:w-[80%] mx-auto">
+        <div className="max-w-[1750px] items-center gap-y-[40px] flex-wrap justify-between flex w-[90%] md:w-[80%] mx-auto wow fadeIn">
           <Counter />
         </div>
       </section>
       <section className="~pt-[32px]/[120px] ~pb-[40px]/[70px]">
         <div className="max-w-[1750px] w-[90%] flex flex-wrap gap-x-[40px] items-center gap-y-[20px] mx-auto">
           <div
-            className={`basis-[40%] xl:basis-[30%] flex-1 text-center xl:text-left text-[#000] xl:text-[64px] ~text-[24px]/[60px] ordinal ${syne.className} h-fit font-[500]`}
+            className={`basis-[40%] xl:basis-[30%] flex-1 text-center xl:text-left text-[#000] xl:text-[64px] ~text-[24px]/[60px] ordinal ${syne.className} h-fit font-[500] wow fadeIn`}
           >
             What{" "}
             <span className="relative">
@@ -171,34 +175,34 @@ const Community = () => {
           {testimonialData.map(({ imgName, testimonial, user }, index) => (
             <div
               key={"testimonial__" + index}
-              className={`relative md:block hidden overflow-hidden flex-1 basis-[40%] xl:basis-[30%]`}
+              className={`relative md:block hidden overflow-hidden flex-1 basis-[40%] xl:basis-[30%] wow fadeIn`}
             >
-              <p className="min-h-[215px] py-[16px] bg-[#FDFCFC] px-[16px] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] text-[14px] text-center tracking-[0.28px] text-black">
+              <p className="min-h-[215px] py-[16px] bg-[#FDFCFC] px-[16px] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] text-[14px] text-center tracking-[0.28px] text-black wow fadeIn">
                 {testimonial}
               </p>
-              <div className="bg-white relative z-[600] h-[4px] w-full"></div>
-              <div className="py-[12px] bg-[#FDFCFC] border-[.25px] border-[#0000000D] flex items-center gap-[4px] justify-center rounded-b-[8px] w-full">
+              <div className="bg-white relative z-[600] h-[4px] w-full wow fadeIn"></div>
+              <div className="py-[12px] bg-[#FDFCFC] border-[.25px] border-[#0000000D] flex items-center gap-[4px] justify-center rounded-b-[8px] w-full wow fadeIn">
                 <img
                   src={`/images/${imgName}.png`}
                   className="rounded-[50%] w-[28px] aspect-square"
                   alt="Testimonial Image"
                 />
-                <div className="">
-                  <h6 className="text-[16px] font-[500] tracking-[.64px] text-[#000000D9]">
+                <div className="wow fadeIn">
+                  <h6 className="text-[16px] font-[500] tracking-[.64px] text-[#000000D9] wow fadeIn">
                     {user}
                   </h6>
                 </div>
               </div>
               <p
                 style={{ transition: "inset 1s" }}
-                className={`${abeeze.className} text-[320px] max-h-[160px] text-[#0000000D] z-[500] right-[-20px] font-[400] absolute bottom-[48px]`}
+                className={`${abeeze.className} text-[320px] max-h-[160px] text-[#0000000D] z-[500] right-[-20px] font-[400] absolute bottom-[48px] wow fadeIn`}
               >
                 “
               </p>
             </div>
           ))}
         </div>
-        <div className="max-w-[1750px] overflow-hidden mx-auto">
+        <div className="max-w-[1750px] overflow-hidden mx-auto wow fadeIn">
           <CommunityTestomonial />
         </div>
       </section>

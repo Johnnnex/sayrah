@@ -18,6 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+        />
+      </head>
       <body className={inter.className}>
         <Layout>{children}</Layout>
       </body>

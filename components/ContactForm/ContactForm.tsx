@@ -74,36 +74,36 @@ const contactFields: Array<
 ];
 const ContactForm = () => {
   return (
-    <div className="~mt-[32px]/[40px] bx-shdw border border-[#76063D] rounded-[12px] ~p-[12px]/[42px]">
-      <div className="shadow-index rounded-[12px] overflow-hidden flex flex-wrap">
-        <div className="~pl-[20px]/[66px] ~pr-[20px]/[60px] bg-[#76063D] ~pt-[20px]/[0] ~pb-[20px]/[60px] flex items-end flex-1 min-w-fit basis-[411px]">
-          <div className="">
+    <div className="~mt-[32px]/[40px] bx-shdw border border-[#76063D] rounded-[12px] ~p-[12px]/[42px] wow fadeIn">
+      <div className="shadow-index rounded-[12px] overflow-hidden flex flex-wrap wow fadeIn">
+        <div className="~pl-[20px]/[66px] ~pr-[20px]/[60px] bg-[#76063D] ~pt-[20px]/[0] ~pb-[20px]/[60px] flex items-end flex-1 min-w-fit basis-[411px] wow fadeIn">
+          <div className="wow fadeIn">
             <h4
-              className={`~text-[16px]/[28px] ${syne.className} md:w-[70%] font-[600] mb-[20px] text-white`}
+              className={`~text-[16px]/[28px] ${syne.className} md:w-[70%] font-[600] mb-[20px] text-white wow fadeIn`}
             >
               Let&apos;s Connect & Collaborate
             </h4>
-            <div className="flex gap-[20px] text-white flex-col">
+            <div className="flex gap-[20px] text-white flex-col wow fadeIn">
               {contactInfo.map(({ icon, text }, index) => (
                 <div
                   key={"contact__" + index}
-                  className="flex react-svg items-center ~gap-[8px]/[16px]"
+                  className="flex react-svg items-center ~gap-[8px]/[16px] wow fadeIn"
                 >
                   <SVGClient
                     className="react-svg text-[#76063D] flex ~h-[26px]/[32px] ~w-[26px]/[32px] border border-[#ffffff] bg-white items-center justify-center rounded-[50%]"
                     src={`/svg/${icon}.svg`}
                   />
                   <span
-                    className={`~text-[14px]/[16px] font-[400] ${poppins.className}`}
+                    className={`~text-[14px]/[16px] font-[400] ${poppins.className} wow fadeIn`}
                   >
                     {text}
                   </span>
                 </div>
               ))}
             </div>
-            <div className="~mt-[20px]/[44px] flex items-center ~gap-[4px]/[8px]">
+            <div className="~mt-[20px]/[44px] flex items-center ~gap-[4px]/[8px] wow fadeIn">
               <div
-                className={`~text-[10px]/[16px] text-nowrap ${poppins.className} react-svg flex font-[500] ~gap-[2px]/[8px] items-center react-svg text-white leading-[200%]`}
+                className={`~text-[10px]/[16px] text-nowrap ${poppins.className} react-svg flex font-[500] ~gap-[2px]/[8px] items-center react-svg text-white leading-[200%] wow fadeIn`}
               >
                 <SVGClient
                   className="~w-[11px]/[30px] h-[2px]"
@@ -111,7 +111,7 @@ const ContactForm = () => {
                 />
                 Follow Me
               </div>
-              <div className="flex items-center ~gap-[4px]/[8px]">
+              <div className="flex items-center ~gap-[4px]/[8px] wow fadeIn">
                 {[
                   { socialIcons: "twitter", socialLinks: "" },
                   { socialIcons: "medium", socialLinks: "" },
@@ -138,17 +138,17 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-[20px] bg-white basis-[705px] ~px-[12px]/[55px] ~py-[20px]/[60px]">
+        <div className="flex-1 flex flex-col gap-[20px] bg-white basis-[705px] ~px-[12px]/[55px] ~py-[20px]/[60px] wow fadeIn">
           {contactFields.map((fields, parentIndex) => {
             return Array.isArray(fields) ? (
               <div
                 key={"parent__" + parentIndex}
-                className="flex w-full ~gap-[24px]/[40px]"
+                className="flex w-full ~gap-[24px]/[40px] wow fadeIn"
               >
                 {fields.map((field, index) => (
                   <div
                     key={"field__" + index + "__" + parentIndex}
-                    className="basis-[278px] flex-1"
+                    className="basis-[278px] flex-1 wow fadeIn"
                   >
                     <Input
                       variant="outlined"
@@ -168,7 +168,7 @@ const ContactForm = () => {
             );
           })}
           <button
-            className={`bg-[#76063D] w-fit ml-auto btn hover:bg-white hover:text-[#76063D] focus:bg-white focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px] ${montserrat.className}`}
+            className={`bg-[#76063D] w-fit ml-auto btn hover:bg-white hover:text-[#76063D] focus:bg-white focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px] ${montserrat.className} wow fadeIn`}
           >
             Send Message
             <SVGClient

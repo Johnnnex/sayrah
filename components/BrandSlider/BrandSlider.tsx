@@ -25,14 +25,15 @@ const BrandSlider = () => {
   return (
     <div
       data-animated={!reducedMotion}
-      className="max-w-[109.375rem] w-[90%] marquee-anim overflow-hidden mx-auto"
+      className="max-w-[109.375rem] w-[90%] marquee-anim overflow-hidden mx-auto wow fadeIn"
     >
-      <div className="inner flex items-center gap-[6.25rem] w-max">
+      <div className="inner flex items-center gap-[6.25rem] w-max wow fadeIn">
         {imgUrls.map((url, index) => (
           <img
             key={`img__${index}`}
             src={"/svg/" + url + ".svg"}
             alt={`img_${index}`}
+            className="wow fadeIn"
           />
         ))}
         {imgUrls.map((url, index) => (
@@ -40,6 +41,7 @@ const BrandSlider = () => {
             key={`img__${index}`}
             src={"/svg/" + url + ".svg"}
             alt={`img_${index}`}
+            className="wow fadeIn"
           />
         ))}
       </div>
