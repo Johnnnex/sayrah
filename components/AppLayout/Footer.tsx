@@ -57,10 +57,10 @@ const Footer = () => {
           Not just another boring newsletter, I promise... I&apos;d be seeing
           you around.
         </p>
-        <div className="md:w-fit w-[90%] mx-auto flex items-center ~gap-[8px]/[20px]">
+        <div className="md:w-fit w-[90%] overflow-hidden mx-auto flex items-center ~gap-[8px]/[20px]">
           <input
             placeholder="Your Email Address"
-            className={`py-[10px] placeholder:text-[#ffffff80] text-[12px] ~h-[40px]/[52px] px-[20px] leading-[266.667%] font-[400] bg-transparent outline-none border border-[#FFF] rounded-[24px] flex-grow md:w-[450px] ${poppins.className}`}
+            className={`py-[10px] placeholder:text-[#ffffff80] text-[12px] ~h-[40px]/[52px] px-[20px] leading-[266.667%] font-[400] bg-transparent outline-none border border-[#FFF] rounded-[24px] grow min-w-0 md:w-[450px] ${poppins.className}`}
             type="text"
           />
           <button
@@ -76,7 +76,7 @@ const Footer = () => {
       </section>
       <section className="pt-[40px] max-w-[1750px] mx-auto  pb-[81px] ~px-[20px]/[52px]">
         <div className="flex md:items-center items-start justify-between md:px-[32px]">
-          <figure>
+          <figure className="~w-[100px]/[171.852px]">
             <img src="/svg/logo.svg" alt="Logo" />
           </figure>
           <ul className="flex flex-col md:flex-row md:items-center md:gap-[40px] gap-[8px]">

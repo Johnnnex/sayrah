@@ -19,16 +19,16 @@ const testimonialData: {
   role: string;
 }[] = [
   {
-    testimonial: `“Sarah has been an invaluable member of the Nirvana Academy, embodying unwavering work ethics, loyalty, & remarkable growth. Having transitioned from student to tutor, she brings a unique perspective that resonates with our students. Her professionalism & commitment to our mission are evident in her outstanding contributions. Sarah excels in mentoring & leadership, positively impacting student progress & personal development. I wholeheartedly recommend her for her exceptional character & capabilities.”`,
-    user: "Samuel O. Oladokun",
-    imgName: "samuel",
-    role: "Founder - Nirvana Labs",
-  },
-  {
     testimonial: `“It was such a pleasure to work together with Sarah. She was always accommodating, kind, and motivated. We worked together at the Web3 Delight Lagos project, and she is very applied and aims for high-quality work. She is creative, smart, has excellent communication skills, and is willing to help when you need it. Sarah is the kind of person who does anything for the group's benefit. A great colleague!”`,
     user: "Paul Lalovich",
     imgName: "paul",
     role: "CEO, Founder; Synthetic Equity",
+  },
+  {
+    testimonial: `“Sarah has been an invaluable member of the Nirvana Academy, embodying unwavering work ethics, loyalty, & remarkable growth. Having transitioned from student to tutor, she brings a unique perspective that resonates with our students. Her professionalism & commitment to our mission are evident in her outstanding contributions. Sarah excels in mentoring & leadership, positively impacting student progress & personal development. I wholeheartedly recommend her for her exceptional character & capabilities.”`,
+    user: "Samuel O. Oladokun",
+    imgName: "samuel",
+    role: "Founder - Nirvana Labs",
   },
   {
     testimonial: `“I have been working with Sarah since April 2022. She is a proficient writer and researcher, with incredible consistency. She also applies a creative and out-of-the-box approach to her work and continues to exceed my expectations. She is also an incredible speaker and community builder in the digital assets field.”`,
@@ -86,7 +86,7 @@ const Testimonial = () => {
               index === activeIndex ? "~mt-[-40px]/[-80px]" : ""
             }`}
           >
-            <p className="h-[10.625rem] bg-[#FDFCFC] px-[1rem] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] ~text-[10px]/[14px] text-center tracking-[0.28px] text-black">
+            <p className="h-fit min-h-[10rem] bg-[#FDFCFC] ~py-[12px]/[16px] px-[1rem] border-[.25px] flex items-center justify-center border-[#0000000D] italic font-[400] rounded-t-[8px] ~text-[12px]/[14px] text-center tracking-[0.28px] text-black">
               {testimonial}
             </p>
             <div className="bg-white relative z-[600] h-[4px] w-full"></div>

@@ -16,7 +16,8 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-intersection-observer": "^9.13.1",
-    "react-svg": "^16.1.34"
+    "react-svg": "^16.1.34",
+    "wowjs": "^1.1.3"
   },
   "devDependencies": {
     "@types/node": "^20",

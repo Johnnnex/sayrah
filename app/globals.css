@@ -6,6 +6,54 @@
 *:focus {
   outline: none;
 }
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* For IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+*::-ms-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-ms-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-ms-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+*::-ms-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* Remove default anchor styles */
 a {
   text-decoration: none;
@@ -39,47 +87,6 @@ a {
 .btn:hover svg,
 .btn:focus svg {
   transform: rotate(45deg);
-}
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-.conic-nav-bg {
-  background-image: conic-gradient(
-    from var(--angle),
-    transparent,
-    #76063d1a,
-    #76063d,
-    #76063d,
-    #76063d,
-    #76063d1a,
-    transparent
-  );
-}
-
-.conic-nav-bg:hover,
-.conic-nav-bg:focus {
-  animation: 1s spin linear infinite;
-}
-
-@keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
-
-.reg-nav-bg {
-  background-color: #76063d1a;
-  transition: all 0.4s;
-}
-
-.reg-nav-bg:hover,
-.reg-nav-bg:focus {
-  background-color: rgba(118, 6, 60, 0.348);
 }
 
 .react-svg > div > div {
@@ -204,4 +211,49 @@ a {
 
 .active {
   border-bottom: 1px solid #76063d;
+  width: fit-content;
+}
+
+@media (min-width: 1280px) {
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  .conic-nav-bg {
+    background-image: conic-gradient(
+      from var(--angle),
+      transparent,
+      #76063d1a,
+      #76063d,
+      #76063d,
+      #76063d,
+      #76063d1a,
+      transparent
+    );
+  }
+
+  .conic-nav-bg:hover,
+  .conic-nav-bg:focus {
+    animation: 1s spin linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  .reg-nav-bg {
+    background-color: #76063d1a;
+    transition: all 0.4s;
+  }
+
+  .reg-nav-bg:hover,
+  .reg-nav-bg:focus {
+    background-color: rgba(118, 6, 60, 0.348);
+  }
 }
