@@ -72,10 +72,10 @@ const Header = () => {
 
   return (
     <header
-      style={{ transition: "all .3s" }}
+      style={{ transition: "all .3s", backgroundColor: "#fff" }}
       className={`${
         !scrolled ? "py-[1rem]" : ""
-      } sticky w-full bg-white z-[500] px-[1rem] top-0 xl:px-[5rem] ${
+      } sticky w-full bg-white dark:bg-white z-[900] px-[1rem] top-0 xl:px-[5rem] ${
         montserrat.className
       }`}
     >
@@ -94,7 +94,7 @@ const Header = () => {
           />
         </button>
         <div
-          className={`xl:relative absolute top-0 left-0 w-full h-[100vh] xl:h-fit flex flex-col xl:flex-row ~rounded-b-[16px]/[64px] items-center gap-[20px] xl:w-fit xl:bg-none bg-white p-[16px] xl:p-0 ${
+          className={`xl:relative absolute top-0 left-0 w-full h-[100vh] xl:h-fit flex flex-col xl:flex-row ~rounded-b-[16px]/[64px] items-center gap-[20px] xl:w-fit xl:bg-none bg-white dark:bg-white p-[16px] xl:p-0 ${
             isActive ? "translate-y-0" : "translate-y-[-100%] xl:translate-y-0"
           } transition-transform duration-300`}
         >
@@ -112,7 +112,7 @@ const Header = () => {
                     } rounded-[1.5rem] flex justify-center items-center m-0`}
                     href={item.href}
                   >
-                    <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white px-[1rem] text-[0.9375rem] ">
+                    <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white dark:bg-white px-[1rem] text-[0.9375rem] ">
                       {item.title}
                     </div>
                   </a>
@@ -123,7 +123,7 @@ const Header = () => {
                     } rounded-[1.5rem] flex justify-center items-center m-0`}
                     href={item.href}
                   >
-                    <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white px-[1rem] text-[0.9375rem] ">
+                    <div className="text-nowrap py-[.5rem] m-[1px] rounded-[1.5rem] bg-white dark:bg-white px-[1rem] text-[0.9375rem] ">
                       {item.title}
                     </div>
                   </Link>

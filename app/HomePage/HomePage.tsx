@@ -172,18 +172,20 @@ const HomePage = () => {
         <div className="max-w-[1750px] w-[90%] mx-auto">
           <Chip name="features" />
           <div className="flex gap-y-[28px] ~mt-[32px]/[60px] flex-wrap gap-x-[27px] wow fadeIn">
-            {features.map(({ subtitle, url, link, title }, index) => (
-              <CommonContainer
-                key={"feature__" + index}
-                imgUrl={url}
-                link={link}
-                subtitle={subtitle}
-                title={title}
-              />
-            ))}
+            {features
+              .slice(4, 8)
+              .map(({ subtitle, url, link, title }, index) => (
+                <CommonContainer
+                  key={"feature__" + index}
+                  imgUrl={url}
+                  link={link}
+                  subtitle={subtitle}
+                  title={title}
+                />
+              ))}
           </div>
           <Link
-            href="/about"
+            href="/about#features"
             style={{ border: "1px solid #76063D", display: "flex" }}
             className="hover:bg-[#76063D] react-svg ~mt-[20px]/[40px] w-fit mx-auto btn bg-white focus:bg-[#76063D] text-[#76063D] focus:text-white transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg hover:text-white font-[400] flex px-[24px] py-[11px]"
           >

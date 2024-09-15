@@ -6,6 +6,14 @@
 *:focus {
   outline: none;
 }
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #fff !important;
+  }
+}
+* {
+  scroll-behavior: smooth;
+}
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
@@ -73,7 +81,7 @@ a {
   bottom: 0;
   height: 1px;
   width: 100%;
-  background-color: #76063d;
+  background-color: currentColor;
   transform: translateX(-100%);
   transition: 0.4s;
 }
@@ -165,10 +173,6 @@ a {
   }
 }
 
-/* .marquee-anim {
-  animation: marquee 6s linear infinite;
-} */
-
 .marquee-anim[data-animated="true"]:hover .inner {
   animation-play-state: paused;
 }
@@ -210,8 +214,7 @@ a {
 }
 
 .active {
-  border-bottom: 1px solid #76063d;
-  width: fit-content;
+  color: #76063d80;
 }
 
 @media (min-width: 1280px) {

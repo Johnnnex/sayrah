@@ -139,7 +139,10 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center">
+      <section
+        id="features"
+        className="bg-[url(/images/bg-white.jpg)] bg-cover bg-center"
+      >
         <div className="flex flex-wrap gap-[26px] max-w-[1750px] xl:items-start md:items-center w-[90%] mx-auto pt-[70px] pb-[102px] wow fadeIn">
           <h2
             className={`${syne.className} h-fit relative ~text-[24px]/[60px] grow basis-[20%] font-[500] ordinal text-[#76063D] wow fadeIn`}

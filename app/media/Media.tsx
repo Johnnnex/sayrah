@@ -5,6 +5,7 @@ import CommonContainer from "@/components/CommonContainer";
 import features from "@/Data/features";
 import SVGClient from "@/components/SVGClient";
 import { Montserrat, Poppins, Syne } from "next/font/google";
+import Link from "next/link";
 
 const syne = Syne({
   weight: ["400", "500", "600", "700", "800"],
@@ -139,54 +140,6 @@ const Media = () => {
       <Hero bgImg="/images/dev-x.png" chipTitle="MEDIA AND FEATURES" />
       <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover pb-[40px] ~pt-[32px]/[80px]">
         <div className="max-w-[1750px] w-[90%] mx-auto wow fadeIn">
-          <Chip name="ARTICLES" />
-          <div className="~my-[20px]/[40px] flex flex-wrap gap-[26px] wow fadeIn">
-            {features.slice(0, 4).map((feature, index) => (
-              <CommonContainer
-                key={`article-${index}`}
-                link={feature.link}
-                subtitle={feature.subtitle}
-                title={feature.title}
-                imgUrl={feature.url}
-                iconName="book-04"
-              />
-            ))}
-          </div>
-          <div className="flex justify-center mt-[32px] wow fadeIn">
-            <button
-              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] ~text-[12px]/[16px] rounded-[24px] flex items-center gap-[8px] px-[40px] py-[12px] ${montserrat.className}`}
-            >
-              See More
-              <SVGClient src="/svg/arrow-up-right-011.svg" />
-            </button>
-          </div>
-        </div>
-      </section>
-      <section className="bg-[url(/svg/noise-bg.svg)] bg-cover bg-center ~py-[20px]/[40px]">
-        <div className="max-w-[1750px] w-[90%] mx-auto wow fadeIn">
-          <p
-            className={`text-white text-center ~text-[16px]/[24px] font-medium leading-[133.333%] mb-[20px] ${syne.className} wow fadeIn`}
-          >
-            Ready to elevate your next event?
-            <br />
-            Book me as your speaker for insights on community growth, DeFi, and
-            Web3 education!
-          </p>
-          <div className="flex justify-center wow fadeIn">
-            <button
-              className={`bg-[#FFF] btn ~text-[12px]/[16px] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[24px] gap-[8px] font-[500] react-svg text-[#76063D] flex px-[24px] py-[11px] ${montserrat.className}`}
-            >
-              Book Me
-              <SVGClient
-                className="~w-[16px]/[24px] ~h-[16px]/[24px]"
-                src="/svg/navigation-03.svg"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
-      <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover pb-[40px] ~pt-[40px]/[80px]">
-        <div className="max-w-[1750px] w-[90%] mx-auto wow fadeIn">
           <Chip name="MEDIA" />
           <div className="~my-[20px]/[40px] flex flex-wrap gap-[26px] wow fadeIn">
             {features.slice(0, 4).map((feature, index) => (
@@ -196,18 +149,18 @@ const Media = () => {
                 subtitle={feature.subtitle}
                 title={feature.title}
                 imgUrl={feature.url}
-                iconName="play-circle"
+                iconName={index === 0 ? "play-circle" : "book-04"}
               />
             ))}
           </div>
-          <div className="flex justify-center mt-[32px] wow fadeIn">
+          {/* <div className="flex justify-center mt-[32px] wow fadeIn">
             <button
               className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] ~text-[12px]/[16px] rounded-[24px] flex items-center gap-[8px] px-[40px] py-[12px] ${montserrat.className}`}
             >
               See More
               <SVGClient src="/svg/arrow-up-right-011.svg" />
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="bg-[url(/svg/noise-bg.svg)] bg-cover bg-center ~py-[20px]/[40px]">
@@ -221,21 +174,35 @@ const Media = () => {
             Book me today for an unforgettable experience!
           </p>
           <div className="flex justify-center wow fadeIn">
-            <button
-              className={`bg-[#FFF] btn ~text-[12px]/[16px] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[24px] gap-[8px] font-[500] react-svg text-[#76063D] flex px-[24px] py-[11px] ${montserrat.className}`}
-            >
-              Book Me
-              <SVGClient
-                className="~w-[16px]/[24px] ~h-[16px]/[24px]"
-                src="/svg/navigation-03.svg"
-              />
-            </button>
+            <Link href="/contact">
+              <button
+                className={`bg-[#FFF] btn ~text-[12px]/[16px] hover:text-white focus:text-white hover:bg-transparent focus:bg-transparent border border-white transition-[.4s] items-center rounded-[24px] gap-[8px] font-[500] react-svg text-[#76063D] flex px-[24px] py-[11px] ${montserrat.className}`}
+              >
+                Book Me
+                <SVGClient
+                  className="~w-[16px]/[24px] ~h-[16px]/[24px]"
+                  src="/svg/navigation-03.svg"
+                />
+              </button>
+            </Link>
           </div>
         </div>
       </section>
       <section className="bg-[url(/images/bg-white.jpg)] bg-center bg-cover py-[40px]">
         <div className="max-w-[1750px] w-[90%] mx-auto wow fadeIn">
           <Chip name="SPEAKING ENGAGEMENTS" />
+          <div className="border-b border-[#76063D80] mt-[32px]">
+            <button
+              className={`bg-[#76063D] hover:bg-white border border-r-0 hover:text-[#76063D] focus:text-[#76063D] border-b-0 border-[#76063D] focus:bg-white transition-[.4s] px-[16px] py-[8px] text-white ${syne.className}`}
+            >
+              2024
+            </button>
+            <button
+              className={`bg-[#76063D] hover:bg-white border hover:text-[#76063D] focus:text-[#76063D] border-b-0 border-[#76063D] focus:bg-white transition-[.4s] px-[16px] py-[8px] text-white ${syne.className}`}
+            >
+              2023
+            </button>
+          </div>
           <div className="my-[40px] flex flex-wrap gap-[12px] wow fadeIn">
             {engagements.map((engagement, index) => (
               <div
@@ -252,14 +219,6 @@ const Media = () => {
                 </p>
               </div>
             ))}
-          </div>
-          <div className="flex justify-center mt-[32px] wow fadeIn">
-            <button
-              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] ~text-[12px]/[16px] rounded-[24px] flex items-center gap-[8px] px-[40px] py-[12px] ${montserrat.className}`}
-            >
-              See More
-              <SVGClient src="/svg/arrow-up-right-011.svg" />
-            </button>
           </div>
         </div>
       </section>

@@ -105,33 +105,33 @@ const Footer = () => {
             ))}
           </ul>
           <div className="md:hidden flex flex-col gap-[8px] wow fadeIn">
-            <Link
+            <a
               href=""
               className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
             >
-              EULA
-            </Link>
-            <Link
+              LinkedIn
+            </a>
+            <a
               href="/"
               className={`~text-[10px]/[12px] font-[400] a text-[#76063D] tracking-[0.24px] ${poppins.className}`}
             >
-              Privacy Policy
-            </Link>
+              Twitter
+            </a>
           </div>
         </div>
         <hr className="mt-[41px] bg-[#76063D80] mb-[12.25px] h-[.4px]" />
         <div
           className={`w-fit hidden md:flex text-[12px] text-[#76063D] items-center gap-[40px] ml-auto ${poppins.className} wow fadeIn`}
         >
-          <Link
+          <a
             href=""
             className="font-[400] tracking-[0.24px] a transition-[.4s]"
           >
-            EULA
-          </Link>
-          <Link href="/" className="font-[400] a tracking-[0.24px]">
-            Privacy Policy
-          </Link>
+            LinkedIn
+          </a>
+          <a href="/" className="font-[400] a tracking-[0.24px]">
+            Twitter
+          </a>
         </div>
         <p
           className={`text-center text-[#76063D] ~text-[10px]/[12px] font-normal leading-normal tracking-[0.16px] ${poppins.className} wow fadeIn`}
