@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Hero from "@/components/Hero";
 import Chip from "@/components/Chip";
 import CommonContainer from "@/components/CommonContainer";
@@ -135,6 +137,8 @@ const engagements: MediaItem[] = [
 ];
 
 const Media = () => {
+  const [activeYear, setActiveYear] = useState(1);
+
   return (
     <>
       <Hero bgImg="/images/dev-x.png" chipTitle="MEDIA AND FEATURES" />
@@ -193,32 +197,62 @@ const Media = () => {
           <Chip name="SPEAKING ENGAGEMENTS" />
           <div className="border-b border-[#76063D80] mt-[32px]">
             <button
-              className={`bg-[#76063D] hover:bg-white border border-r-0 hover:text-[#76063D] focus:text-[#76063D] border-b-0 border-[#76063D] focus:bg-white transition-[.4s] px-[16px] py-[8px] text-white ${syne.className}`}
+              onClick={() => setActiveYear(1)}
+              className={`${
+                activeYear === 1
+                  ? "bg-[#76063D] text-white"
+                  : "bg-white text-[#76063D]"
+              } hover:bg-[#76063D] focus:bg-[#76063D] border border-r-0 border-b-0 border-[#76063D80] transition-[.4s] px-[16px] py-[8px] hover:text-white focus:text-white ${
+                syne.className
+              }`}
             >
-              2024
+              2022
             </button>
             <button
-              className={`bg-[#76063D] hover:bg-white border hover:text-[#76063D] focus:text-[#76063D] border-b-0 border-[#76063D] focus:bg-white transition-[.4s] px-[16px] py-[8px] text-white ${syne.className}`}
+              onClick={() => setActiveYear(2)}
+              className={`${
+                activeYear === 2
+                  ? "bg-[#76063D] text-white"
+                  : "bg-white text-[#76063D]"
+              } hover:bg-[#76063D] focus:bg-[#76063D] border border-b-0 border-[#76063D80] transition-[.4s] px-[16px] py-[8px] hover:text-white focus:text-white ${
+                syne.className
+              }`}
             >
               2023
             </button>
+            <button
+              onClick={() => setActiveYear(3)}
+              className={`${
+                activeYear === 3
+                  ? "bg-[#76063D] text-white"
+                  : "bg-white text-[#76063D]"
+              } hover:bg-[#76063D] focus:bg-[#76063D] border border-l-0 border-b-0 border-[#76063D80] transition-[.4s] px-[16px] py-[8px] hover:text-white focus:text-white ${
+                syne.className
+              }`}
+            >
+              2024
+            </button>
           </div>
           <div className="my-[40px] flex flex-wrap gap-[12px] wow fadeIn">
-            {engagements.map((engagement, index) => (
-              <div
-                key={`engagement-${index}`}
-                className={`xl:basis-[20%] md:basis-[40%] basis-[100%] flex-1 p-[16px] rounded-[12px] border-[0.5px] border-[#76063D80] ${poppins.className} wow fadeIn`}
-              >
-                <p className="text-[#000000CC] text-[10px] font-semibold tracking-[0.2px] wow fadeIn">
-                  {engagement.title}{" "}
-                  <span className="italic font-normal">{engagement.date}</span>
-                </p>
-                <hr className="my-[8px] border-[#76063D80]" />
-                <p className="text-[#000000CC] font-semibold text-[10px] leading-[180%] wow fadeIn">
-                  {engagement.message}
-                </p>
-              </div>
-            ))}
+            {engagements.map((engagement, index) =>
+              engagement.date.startsWith(`202${activeYear + 1}`) ? (
+                <div
+                  key={`engagement-${index}`}
+                  className={`xl:basis-[20%] md:basis-[40%] basis-[100%] flex-1 p-[16px] rounded-[12px] border-[0.5px] border-[#76063D80] ${poppins.className} wow fadeIn`}
+                >
+                  <p className="text-[#000000CC] text-[10px] font-semibold tracking-[0.2px] wow fadeIn">
+                    {engagement.title}{" "}
+                    <span className="italic font-normal">
+                      {engagement.date}
+                    </span>
+                  </p>
+                  <hr className="my-[8px] border-[#76063D80]" />
+                  <p className="text-[#000000CC] font-semibold text-[10px] leading-[180%] wow fadeIn">
+                    {engagement.message}
+                  </p>
+                </div>
+              ) : null
+            )}
           </div>
         </div>
       </section>
