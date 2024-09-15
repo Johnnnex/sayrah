@@ -166,7 +166,7 @@ const MediaKit = () => {
                   download
                 >
                   <SVGClient
-                    style={{ width: "40px", height: "40px", color: "#fff" }}
+                    style={{ width: "30px", height: "30px", color: "#fff" }}
                     src="/svg/download.svg"
                   />
                 </a>
