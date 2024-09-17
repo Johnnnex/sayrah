@@ -98,7 +98,6 @@ const ContactForm = () => {
       ...prevData,
       [name]: value,
     }));
-    // Clear error when user starts typing
     if (formErrors[name]) {
       setFormErrors((prevErrors) => ({
         ...prevErrors,
@@ -135,6 +134,8 @@ const ContactForm = () => {
       );
       console.log(result.text);
       toast.success("Message sent successfully!");
+
+      setFormData({});
     } catch (error) {
       console.log(error);
       toast.error("Failed to send message. Please try again.");
@@ -250,6 +251,7 @@ const ContactForm = () => {
                       onChange={handleInputChange}
                       error={formErrors[field.name]}
                       type={field.type}
+                      value={formData[field.name] || ""}
                     />
                   </div>
                 ))}
@@ -264,6 +266,7 @@ const ContactForm = () => {
                   onChange={handleInputChange}
                   error={formErrors[fields.name]}
                   type={fields.type}
+                  value={formData[fields.name] || ""}
                 />
               </div>
             );
@@ -275,7 +278,7 @@ const ContactForm = () => {
           >
             Send Message
             {isSubmitting ? (
-              <ClipLoader size={16} className="ml-2" color="#fff" />
+              <ClipLoader size={16} className="ml-2" color="currentColor" />
             ) : (
               <SVGClient
                 className="~w-[16px]/[24px] ~h-[16px]/[24px]"

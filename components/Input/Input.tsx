@@ -12,6 +12,7 @@ type InputTypes = {
   label?: string;
   name?: string;
   error?: string;
+  value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -23,6 +24,7 @@ const Input = ({
   error,
   name,
   onChange,
+  value,
 }: InputTypes) => {
   return !!variant && variant === "outlined" ? (
     <>
@@ -44,6 +46,7 @@ const Input = ({
           type={!!type ? type : "text"}
           name={name}
           onChange={onChange}
+          value={value}
         />
       </div>
       {!!error ? (
