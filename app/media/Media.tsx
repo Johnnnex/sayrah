@@ -197,16 +197,16 @@ const Media = () => {
           <Chip name="SPEAKING ENGAGEMENTS" />
           <div className="border-b border-[#76063D80] mt-[32px]">
             <button
-              onClick={() => setActiveYear(1)}
+              onClick={() => setActiveYear(3)}
               className={`${
-                activeYear === 1
+                activeYear === 3
                   ? "bg-[#76063D] text-white"
                   : "bg-white text-[#76063D]"
-              } hover:bg-[#76063D] focus:bg-[#76063D] border border-r-0 border-b-0 border-[#76063D80] transition-[.4s] px-[16px] py-[8px] hover:text-white focus:text-white ${
+              } hover:bg-[#76063D] focus:bg-[#76063D] border border-r-0 border-b-0 border-[#76063D80] transition-[.4s] px-[16px] py-[8px] hover:text-white focus:text-white rounded-tl-[8px] ${
                 syne.className
               }`}
             >
-              2022
+              2024
             </button>
             <button
               onClick={() => setActiveYear(2)}
@@ -221,21 +221,21 @@ const Media = () => {
               2023
             </button>
             <button
-              onClick={() => setActiveYear(3)}
+              onClick={() => setActiveYear(1)}
               className={`${
-                activeYear === 3
+                activeYear === 1
                   ? "bg-[#76063D] text-white"
                   : "bg-white text-[#76063D]"
-              } hover:bg-[#76063D] focus:bg-[#76063D] border border-l-0 border-b-0 border-[#76063D80] transition-[.4s] px-[16px] py-[8px] hover:text-white focus:text-white ${
+              } hover:bg-[#76063D] focus:bg-[#76063D] border border-l-0 border-b-0 border-[#76063D80] rounded-tr-[8px] transition-[.4s] px-[16px] py-[8px] hover:text-white focus:text-white ${
                 syne.className
               }`}
             >
-              2024
+              2022
             </button>
           </div>
-          <div className="my-[40px] flex flex-wrap gap-[12px] wow fadeIn">
+          <div className="my-[40px] flex flex-wrap max-h-[50vh] px-[8px] mx-[-8px] md:max-h-fit overflow-y-auto gap-[12px] wow fadeIn scrollbar-hide">
             {engagements.map((engagement, index) =>
-              engagement.date.startsWith(`202${activeYear + 1}`) ? (
+              engagement.date.startsWith(`202${1 + activeYear}`) ? (
                 <div
                   key={`engagement-${index}`}
                   className={`xl:basis-[20%] md:basis-[40%] basis-[100%] flex-1 p-[16px] rounded-[12px] border-[0.5px] border-[#76063D80] ${poppins.className} wow fadeIn`}

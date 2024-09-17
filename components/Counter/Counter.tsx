@@ -67,7 +67,7 @@ const Counter: FC = () => {
         },
       ].map(({ numeral, text }, index) => (
         <Fragment key={"Metric__" + index}>
-          <div className="text-white mx-auto xl:ml-0 basis-[246px] wow fadeIn">
+          <div className="text-white mx-auto md:mx-auto wow fadeIn">
             <p
               ref={ref}
               className="~text-[30px]/[40px] leading-[80%] text-center font-[600] wow fadeIn"

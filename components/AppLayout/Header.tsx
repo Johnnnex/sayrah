@@ -82,7 +82,7 @@ const Header = () => {
       <hr className="mb-[.75rem] bg-[#76063D40] h-[.4px]" />
       <section className="flex items-center justify-between">
         <figure className="~w-[100px]/[171.852px]">
-          <img src="/svg/logo.svg" alt="Logo" />
+          <img className="relative z-[1]" src="/svg/logo.svg" alt="Logo" />
         </figure>
         <button
           className="xl:hidden relative z-[5000]"
@@ -94,7 +94,7 @@ const Header = () => {
           />
         </button>
         <div
-          className={`xl:relative absolute top-0 left-0 w-full h-[100vh] xl:h-fit flex flex-col xl:flex-row ~rounded-b-[16px]/[64px] items-center gap-[20px] xl:w-fit xl:bg-none bg-white dark:bg-white p-[16px] xl:p-0 ${
+          className={`xl:relative absolute top-0 left-0 w-full h-[100vh] xl:h-fit flex flex-col xl:flex-row ~rounded-b-[16px]/[64px] justify-center md:justify-between items-center gap-[20px] xl:w-fit xl:bg-none bg-white dark:bg-white p-[16px] xl:p-0 ${
             isActive ? "translate-y-0" : "translate-y-[-100%] xl:translate-y-0"
           } transition-transform duration-300`}
         >

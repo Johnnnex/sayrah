@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Poppins } from "next/font/google";
 import SVGClient from "../SVGClient";
-import Link from "next/link";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

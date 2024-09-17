@@ -32,22 +32,22 @@ const serviceInfo: {
   {
     svg: "tool",
     title: "Community Building",
-    text: "Lorem ipsum dolor sit amet consectetur. Amet enim morbi eu id aliquam eget in. Facilisis justo mi congue commodo sem eu morbi imperdiet. Amet eget morbi nibh lorem sit nunc sit. Habitant sed eget donec turpis quis. Senectus cursus sit facilisis urna lectus cursus sit sed suspendisse. Urna nulla pulvinar massa luctus.",
+    text: "Create and nurture vibrant online communities that foster engagement and growth. This service focuses on developing strategies to build strong ecosystems, encouraging active participation, and ensuring a supportive environment for users.",
   },
   {
     svg: "oui_training",
     title: "Web3 Training",
-    text: "Lorem ipsum dolor sit amet consectetur. Amet enim morbi eu id aliquam eget in. Facilisis justo mi congue commodo sem eu morbi imperdiet. Amet eget morbi nibh lorem sit nunc sit. Habitant sed eget donec turpis quis. Senectus cursus sit facilisis urna lectus cursus sit sed suspendisse. Urna nulla pulvinar massa luctus.",
+    text: "Provide comprehensive training on blockchain technology, decentralized finance (DeFi), and the transition to Web3. Simplify complex concepts through tailored sessions to help individuals and organizations understand and leverage the decentralized world effectively.",
   },
   {
     svg: "wi_small-craft-advisory",
     title: "Project Advisory",
-    text: "Lorem ipsum dolor sit amet consectetur. Amet enim morbi eu id aliquam eget in. Facilisis justo mi congue commodo sem eu morbi imperdiet. Amet eget morbi nibh lorem sit nunc sit. Habitant sed eget donec turpis quis. Senectus cursus sit facilisis urna lectus cursus sit sed suspendisse. Urna nulla pulvinar massa luctus.",
+    text: "Offer strategic guidance for blockchain and DeFi projects, including tokenomics, ecosystem development, and market positioning. This service helps projects navigate the decentralized landscape and ensures they are set up for long-term success.",
   },
   {
     svg: "nimbus_marketing",
     title: "Marketing & Consulting",
-    text: "Lorem ipsum dolor sit amet consectetur. Amet enim morbi eu id aliquam eget in. Facilisis justo mi congue commodo sem eu morbi imperdiet. Amet eget morbi nibh lorem sit nunc sit. Habitant sed eget donec turpis quis. Senectus cursus sit facilisis urna lectus cursus sit sed suspendisse. Urna nulla pulvinar massa luctus.",
+    text: "Develop and implement targeted marketing strategies that resonate with the Web3 audience. This service includes market analysis, branding, and campaign development to enhance project visibility and drive engagement.",
   },
 ];
 
@@ -57,7 +57,7 @@ const HomePage = () => {
       <section className="w-full relative max-h-[760px] h-[60vh] md:h-[85vh]">
         <BgSlider />
         <div className="absolute h-full w-full flex items-end top-0 left-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent">
-          <div className="2xl:px-[80px] md:px-[40px] px-[20px] max-w-[1750px] mx-auto xl:pb-[67px] pb-[48px] text-white">
+          <div className="max-w-[1750px] w-[90%] mx-auto xl:pb-[67px] pb-[48px] text-white">
             <h1
               className={`xl:text-[64px] wow fadeIn md:text-[56px] text-[48px] 2xl:text-[96px] font-[700] mb-[-12px] uppercase ${montserrat.className}`}
             >
@@ -89,7 +89,7 @@ const HomePage = () => {
                 <span className="text-[#76063D] ">SARAH IDAHOSA?</span>
               </h2>
               <p
-                className={`${poppins.className} leading-[200%] ~text-[12px]/[16px] mb-[28px] font-[400] text-black wow fadeIn`}
+                className={`${poppins.className} leading-[200%] ~text-[12px]/[16px] text-justify mb-[28px] font-[400] text-black wow fadeIn`}
               >
                 Sarah Idahosa; (Sayraah) is a versatile professional
                 distinguished for her proficiency in Web3 community development,
@@ -99,14 +99,22 @@ const HomePage = () => {
                 comprehensive knowledge of blockchain technology and adeptly
                 navigating tthe Web3 ecosystem utilizing their existing Web2
                 competencies. <br />
+                <br />
                 In addition to her pivotal role at Women In DeFi, Sarah also
                 assumes the position of community manager at Cassava Network.
                 This innovative platform serves as a pivotal bridge between Web
                 2 and Web 3, particularly focusing on NFTs, gaming, and
                 entertainment sectors. <br />
+                <br />
                 Through her stewardship, Sarah facilitates seamless connections
                 between individuals & the manifold advantages inherent in the
-                Web3 landscape....
+                Web3 landscape...{" "}
+                <Link
+                  href="/about"
+                  className="text-[#76063D] ~text-[10px]/[14px] italic inline h-fit mb-0 hover:underline"
+                >
+                  See more
+                </Link>
               </p>
               <button className="bg-[#76063D] hover:bg-white hover:text-[#76063D] focus:bg-white focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px]">
                 Download CV
@@ -131,7 +139,7 @@ const HomePage = () => {
             {serviceInfo.map(({ svg, text, title }, index) => (
               <div
                 key={"service__" + index}
-                className="md:pt-[20px] py-[12px] basis-[600px] flex-1 border-[.25px] border-[#00000040] md:pb-[44px] rounded-[8px] bg-[#FFF] px-[24px] md:px-[40px] wow fadeIn"
+                className="md:pt-[20px] py-[12px] basis-[45%] flex-1 border-[.25px] border-[#00000040] md:pb-[44px] rounded-[8px] bg-[#FFF] px-[24px] md:px-[40px] wow fadeIn"
               >
                 <figure className="aspect-[1/1] mb-[12px] w-[40px] bg-[#76063D] text-white react-svg flex items-center justify-center rounded-[8px] mx-auto">
                   <SVGClient

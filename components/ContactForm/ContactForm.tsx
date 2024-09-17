@@ -113,14 +113,34 @@ const ContactForm = () => {
               </div>
               <div className="flex items-center ~gap-[4px]/[8px] wow fadeIn">
                 {[
-                  { socialIcons: "twitter", socialLinks: "" },
-                  { socialIcons: "medium", socialLinks: "" },
-                  { socialIcons: "mail", socialLinks: "" },
-                  { socialIcons: "tiktok", socialLinks: "" },
-                  { socialIcons: "instagram", socialLinks: "" },
-                  { socialIcons: "linkedin", socialLinks: "" },
-                  { socialIcons: "telegram-one", socialLinks: "" },
-                  { socialIcons: "discord", socialLinks: "" },
+                  {
+                    socialIcons: "twitter",
+                    socialLinks: "https://x.com/thesarahidahosa",
+                  },
+                  {
+                    socialIcons: "medium",
+                    socialLinks: "https://medium.com/@sarahidahosa",
+                  },
+                  {
+                    socialIcons: "mail",
+                    socialLinks: "mailto:sarahidahosa001@gmail.com",
+                  },
+                  {
+                    socialIcons: "tiktok",
+                    socialLinks: "https://www.tiktok.com/@thesarahidahosa",
+                  },
+                  {
+                    socialIcons: "instagram",
+                    socialLinks: "https://www.instagram.com/thesarahidahosa/",
+                  },
+                  {
+                    socialIcons: "linkedin",
+                    socialLinks: "https://www.linkedin.com/in/sarahidahosa/",
+                  },
+                  {
+                    socialIcons: "telegram-one",
+                    socialLinks: "https://t.me/thesarahidahosa",
+                  },
                 ].map(({ socialIcons, socialLinks }, index) => (
                   <a
                     target="_blank"

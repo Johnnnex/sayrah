@@ -86,11 +86,23 @@ const Community = () => {
               </div>
               <div className="flex items-center gap-[8px] wow fadeIn">
                 {[
-                  { socialIcons: "twitter", socialLinks: "" },
-                  { socialIcons: "instagram", socialLinks: "" },
-                  { socialIcons: "linkedin", socialLinks: "" },
-                  { socialIcons: "discord", socialLinks: "" },
-                  { socialIcons: "youtube", socialLinks: "" },
+                  {
+                    socialIcons: "twitter",
+                    socialLinks: "https://x.com/womenindefi_org",
+                  },
+                  {
+                    socialIcons: "instagram",
+                    socialLinks: "https://www.instagram.com/womenindefi_org/",
+                  },
+                  {
+                    socialIcons: "linkedin",
+                    socialLinks:
+                      "https://www.linkedin.com/company/womenindefi/",
+                  },
+                  {
+                    socialIcons: "youtube",
+                    socialLinks: "https://youtube.com/@womenindefi",
+                  },
                 ].map(({ socialIcons, socialLinks }, index) => (
                   <a
                     target="_blank"
@@ -120,7 +132,7 @@ const Community = () => {
             </a>
           </div>
           <div
-            className={`basis-[560px] text-[16px] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className} wow fadeIn`}
+            className={`basis-[560px] ~text-[12px]/[16px] tracking-[0.32px] leading-[200%] font-[400] flex-1 ${poppins.className} wow fadeIn`}
           >
             {[
               {
@@ -140,7 +152,7 @@ const Community = () => {
                 <h3 className="font-[600] tracking-[0.4px] wow fadeIn">
                   {header}
                 </h3>
-                <p className="wow fadeIn">{text}</p>
+                <p className="wow text-justify fadeIn">{text}</p>
                 {index === 2 ? null : <br />}
               </Fragment>
             ))}
@@ -150,7 +162,7 @@ const Community = () => {
       <section
         className={`bg-[url(/svg/noise-bg.svg)] ${syne.className} bg-cover bg-center ~py-[20px]/[28px]`}
       >
-        <div className="max-w-[1750px] items-center gap-y-[40px] flex-wrap justify-between flex w-[90%] md:w-[80%] mx-auto wow fadeIn">
+        <div className="max-w-[1750px] items-center gap-y-[40px] flex-wrap justify-between gap-[4rem] flex w-[90%] md:w-[80%] mx-auto wow fadeIn">
           <Counter />
         </div>
       </section>

@@ -47,7 +47,7 @@ const MediaKit = () => {
             </figure>
             <div className="basis-[60%] flex flex-col gap-[50px] flex-1">
               <p
-                className={` text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
+                className={` text-[#000] text-justify ${poppins.className} text-justify ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
               >
                 Sarah Idahosa is a versatile professional distinguished for her
                 proficiency in Web3 community development, educational
@@ -98,7 +98,7 @@ const MediaKit = () => {
                 continues to inspire and guide the next generation of blockchain
                 enthusiasts and DeFi innovators.
               </p>
-              <div className="flex gap-[40px] mt-[16px] items-end flex-wrap-reverse wow fadeIn">
+              <div className="flex gap-[40px] mt-[16px] items-end flex-wrap wow fadeIn">
                 <figure className="xl:basis-[28%] xl:hidden block basis-[100%] h-fit">
                   <img
                     src="/images/media-pic-2.png"
