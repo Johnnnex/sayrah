@@ -132,7 +132,7 @@ const ContactForm = () => {
         formData,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
-      console.log(result.text);
+
       toast.success("Message sent successfully!");
 
       setFormData({});

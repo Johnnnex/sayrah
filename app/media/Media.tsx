@@ -134,6 +134,57 @@ const engagements: MediaItem[] = [
     date: "2022-11-19",
     message: "Navigating your way to the top as a woman in Tech.",
   },
+  {
+    title: "Training with Nigerian Security Agencies",
+    date: "2022-11-17",
+    message: "Blockchain and its Utilities.",
+  },
+  {
+    title: "Cyberchain Conference",
+    date: "2022-11-12",
+    message: "Women Empowerment with DeFi.",
+  },
+  {
+    title: "Netrepreneur",
+    date: "2022-11-05",
+    message: "Understanding the Metaverse: Introducing DeFi.",
+  },
+  {
+    title: "Nigeria Fintech Week",
+    date: "2022-10-28",
+    message: "Women in Blockchain - State and Future.",
+  },
+  {
+    title: "Africa Money and DeFi Summit",
+    date: "2022-09-27",
+    message: "Crypto and DeFi in Africa.",
+  },
+  {
+    title: "Ginakev Digital Academy",
+    date: "2022-09-17",
+    message: "Managing your emotions on the path to crypto success.",
+  },
+  {
+    title: "Web3 Delight",
+    date: "2022-07-30",
+    message:
+      "VC Funding for Web3 has remained resilient even as total startup investments have fallen, what Nigeria startups.....",
+  },
+  {
+    title: "Web3 Delight",
+    date: "2022-07-30",
+    message: "The Power of communities in Web3.",
+  },
+  {
+    title: "Lagos Finance Conference",
+    date: "2022-06-04",
+    message: "The New Money Way, Digital Money.",
+  },
+  {
+    title: "Women in Crypto",
+    date: "2022-03-08",
+    message: "Managing day-jobs, business, career, and crypto trading.",
+  },
 ];
 
 const Media = () => {
@@ -157,14 +208,6 @@ const Media = () => {
               />
             ))}
           </div>
-          {/* <div className="flex justify-center mt-[32px] wow fadeIn">
-            <button
-              className={`border border-[#76063D] bg-transparent hover:bg-[#76063D] hover:text-white focus:bg-[#76063D] focus:text-white transition-[.4s] text-[#76063D] ~text-[12px]/[16px] rounded-[24px] flex items-center gap-[8px] px-[40px] py-[12px] ${montserrat.className}`}
-            >
-              See More
-              <SVGClient src="/svg/arrow-up-right-011.svg" />
-            </button>
-          </div> */}
         </div>
       </section>
       <section className="bg-[url(/svg/noise-bg.svg)] bg-cover bg-center ~py-[20px]/[40px]">
