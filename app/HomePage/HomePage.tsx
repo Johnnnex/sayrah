@@ -116,13 +116,13 @@ const HomePage = () => {
                   See more
                 </Link>
               </p>
-              <button className="bg-[#76063D] hover:bg-white hover:text-[#76063D] focus:bg-white focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px]">
+              {/* <button className="bg-[#76063D] hover:bg-white hover:text-[#76063D] focus:bg-white focus:text-[#76063D] transition-[.4s] border border-[#76063D] ~text-[12px]/[16px] items-center rounded-[24px] gap-[8px] react-svg text-white font-[400] flex px-[24px] py-[11px]">
                 Download CV
                 <SVGClient
                   className="react-svg aspect-square ~w-[16px]/[24px]"
                   src="/svg/document-attachment.svg"
                 />
-              </button>
+              </button> */}
             </div>
             <img
               src="/images/sayrah.jpg"

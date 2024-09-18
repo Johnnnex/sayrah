@@ -59,6 +59,12 @@ const features: {
     subtitle: "Web3 Delight; Jul 2022",
     link: "https://open.spotify.com/episode/1zwkAfhTXSyPAJkFrFh43y",
   },
+  {
+    title: "Sarah Idahosa: The Nigerian Queen of Web3 & DeFi",
+    url: "features-sarah",
+    subtitle: "Simplvest; May, 2024",
+    link: "https://www.simplvest.com/sarah-idahosa-the-nigerian-queen-of-web3-defi/",
+  },
 ];
 
 export default features;
