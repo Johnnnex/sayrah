@@ -26,7 +26,7 @@ const CommonContainer = ({
     <div
       className={`${
         basis ? basis : "xl:basis-[20%] md:basis-[40%] basis-[100%]"
-      } img-hover hover:[&>figure>span]:text-[#ADB77E] hover:[&>figure>span]:bg-[#000000AA] grow border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF]`}
+      } img-hover hover:[&>figure>span]:text-[#ADB77E] xl:max-w-[25%] hover:[&>figure>span]:bg-[#000000AA] grow border-[.5px] border-[#76063D80] overflow-hidden rounded-[12px] bg-[#FFF]`}
     >
       <figure className={`h-[10.5625rem] relative duration-[.7s] w-full`}>
         <img

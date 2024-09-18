@@ -46,58 +46,64 @@ const MediaKit = () => {
               />
             </figure>
             <div className="basis-[60%] flex flex-col gap-[50px] flex-1">
-              <p
-                className={` text-[#000] text-justify ${poppins.className} text-justify ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
-              >
-                Sarah Idahosa is a versatile professional distinguished for her
-                proficiency in Web3 community development, educational
-                initiatives, and decentralized finance research.
-                <br />
-                <br />
-                She serves as the esteemed founder of Women In DeFi, a
-                pioneering community dedicated to empowering women with
-                comprehensive knowledge of blockchain technology and adeptly
-                navigating the blockchain technology and adeptly navigating the
-                Web3 ecosystem utilizing their existing Web2 competencies.{" "}
-                <br />
-                <br />
-                In addition to her pivotal role at Women In DeFi, Sarah also
-                assumes the position of partnership and community growth at
-                Mansa, a DeFi RWA protocol. <br />
-                <br />
-                She has previously worked with other Web3 projects such as
-                Cassava Network, Myth of Money, Africa Tech Summit, and Mara,
-                showing her expertise in Web3 Through her stewardship, Sarah
-                facilitates seamless connections between individuals and the
-                manifold advantages inherent in the Web3 landscape. Drawing upon
-                a robust background in blockchain education, Sarah is deeply
-                committed to facilitating individuals&apos; transition from Web2
-                to Web3 paradigms. <br />
-                <br />
-                As a respected thought leader, she is a sought-after speaker at
-                tech conferences and blockchain events, where she shares her
-                insights on community growth strategies, DeFi insights on
-                community growth strategies, DeFi adoption, and the future of
-                Web3. Her talks are known for their clarity, depth, and ability
-                to make complex concepts accessible to diverse audiences. <br />
-                <br />
-                In addition to her speaking engagements, Sarah is an active
-                content creator, regularly publishing articles and thought
-                pieces on her socials. Her writing and videos cover a wide range
-                of topics, from beginner-friendly introductions to DeFi to
-                in-depth analyses of emerging trends in the Web3 ecosystem.{" "}
-                <br />
-                <br />
-                As a Web3 educator, Sarah is committed to demystifying
-                blockchain technology and making it accessible to a broader
-                audience. She conducts workshops, webinars, and online courses
-                that help individuals and businesses understand the practical
-                applications of blockchain and DeFi. Sarah&apos;s vision is to
-                create a more inclusive and decentralized financial system
-                through education, community building, and advocacy. Her work
-                continues to inspire and guide the next generation of blockchain
-                enthusiasts and DeFi innovators.
-              </p>
+              <div>
+                <h3 className="~text-[24px]/[32px] mb-[10px] font-[500]">
+                  Long Biography
+                </h3>
+                <p
+                  className={`text-[#000] text-justify ${poppins.className} text-justify ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
+                >
+                  Sarah Idahosa is a versatile professional distinguished for
+                  her proficiency in Web3 community development, educational
+                  initiatives, and decentralized finance research.
+                  <br />
+                  <br />
+                  She serves as the esteemed founder of Women In DeFi, a
+                  pioneering community dedicated to empowering women with
+                  comprehensive knowledge of blockchain technology and adeptly
+                  navigating the blockchain technology and adeptly navigating
+                  the Web3 ecosystem utilizing their existing Web2 competencies.{" "}
+                  <br />
+                  <br />
+                  In addition to her pivotal role at Women In DeFi, Sarah also
+                  assumes the position of partnership and community growth at
+                  Mansa, a DeFi RWA protocol. <br />
+                  <br />
+                  She has previously worked with other Web3 projects such as
+                  Cassava Network, Myth of Money, Africa Tech Summit, and Mara,
+                  showing her expertise in Web3 Through her stewardship, Sarah
+                  facilitates seamless connections between individuals and the
+                  manifold advantages inherent in the Web3 landscape. Drawing
+                  upon a robust background in blockchain education, Sarah is
+                  deeply committed to facilitating individuals&apos; transition
+                  from Web2 to Web3 paradigms. <br />
+                  <br />
+                  As a respected thought leader, she is a sought-after speaker
+                  at tech conferences and blockchain events, where she shares
+                  her insights on community growth strategies, DeFi insights on
+                  community growth strategies, DeFi adoption, and the future of
+                  Web3. Her talks are known for their clarity, depth, and
+                  ability to make complex concepts accessible to diverse
+                  audiences. <br />
+                  <br />
+                  In addition to her speaking engagements, Sarah is an active
+                  content creator, regularly publishing articles and thought
+                  pieces on her socials. Her writing and videos cover a wide
+                  range of topics, from beginner-friendly introductions to DeFi
+                  to in-depth analyses of emerging trends in the Web3 ecosystem.{" "}
+                  <br />
+                  <br />
+                  As a Web3 educator, Sarah is committed to demystifying
+                  blockchain technology and making it accessible to a broader
+                  audience. She conducts workshops, webinars, and online courses
+                  that help individuals and businesses understand the practical
+                  applications of blockchain and DeFi. Sarah&apos;s vision is to
+                  create a more inclusive and decentralized financial system
+                  through education, community building, and advocacy. Her work
+                  continues to inspire and guide the next generation of
+                  blockchain enthusiasts and DeFi innovators.
+                </p>
+              </div>
               <div className="flex gap-[40px] mt-[16px] items-end flex-wrap wow fadeIn">
                 <figure className="xl:basis-[28%] xl:hidden block basis-[100%] h-fit">
                   <img
@@ -107,30 +113,35 @@ const MediaKit = () => {
                     alt="profile"
                   />
                 </figure>
-                <p
-                  className={`basis-[60%] flex-1 text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
-                >
-                  Sarah Idahosa is a versatile professional distinguished for
-                  her proficiency in Web3 community development, educational
-                  initiatives, and decentralized finance research. <br />
-                  <br />
-                  She serves as the esteemed founder of Women In DeFi, a
-                  pioneering community dedicated to empowering women with
-                  comprehensive knowledge of blockchain technology and adeptly
-                  navigating the Web3 ecosystem utilizing their existing Web2
-                  competencies. <br />
-                  <br />
-                  In addition to her pivotal role at Women In DeFi, Sarah also
-                  assumes the position of partnership and community growth at
-                  Mansa, a DeFi RWA protocol. <br />
-                  <br />
-                  Through her stewardship, Sarah facilitates seamless
-                  connections between individuals and the manifold advantages
-                  inherent in the Web3 landscape. Drawing upon a robust
-                  background in blockchain education, Sarah is deeply committed
-                  to facilitating individuals&apos; transition from Web2 to Web3
-                  paradigms.
-                </p>
+                <div className="basis-[60%] flex-1">
+                  <h3 className="~text-[24px]/[32px] font-[500]">
+                    Short Biography
+                  </h3>
+                  <p
+                    className={`text-[#000] text-justify ${poppins.className} ~text-[12px]/[16px] font-normal leading-[200%] tracking-[0.32px] wow fadeIn`}
+                  >
+                    Sarah Idahosa is a versatile professional distinguished for
+                    her proficiency in Web3 community development, educational
+                    initiatives, and decentralized finance research. <br />
+                    <br />
+                    She serves as the esteemed founder of Women In DeFi, a
+                    pioneering community dedicated to empowering women with
+                    comprehensive knowledge of blockchain technology and adeptly
+                    navigating the Web3 ecosystem utilizing their existing Web2
+                    competencies. <br />
+                    <br />
+                    In addition to her pivotal role at Women In DeFi, Sarah also
+                    assumes the position of partnership and community growth at
+                    Mansa, a DeFi RWA protocol. <br />
+                    <br />
+                    Through her stewardship, Sarah facilitates seamless
+                    connections between individuals and the manifold advantages
+                    inherent in the Web3 landscape. Drawing upon a robust
+                    background in blockchain education, Sarah is deeply
+                    committed to facilitating individuals&apos; transition from
+                    Web2 to Web3 paradigms.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

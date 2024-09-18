@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Community Growth Manager, DeFi Advocate, Web3 Educator, & Founder; Women In DeFi.",
   keywords:
-    "women in tech, women in defi, defi, Web3 Training, Sarah Idahosa, blockchain, cryptocurrency, fintech, community management, Web3 education, DeFi advocate, Women In DeFi founder, crypto influencer, digital assets, decentralized finance, blockchain technology, crypto community, Web3 consultant, blockchain educator, cryptocurrency expert",
+    "women in tech, women in defi, defi, Web3 Training, Sarah Idahosa, blockchain, cryptocurrency, fintech, community management, Web3 education, DeFi advocate, Women In DeFi founder, crypto influencer, digital assets, decentralized finance, blockchain technology, crypto community, Web3 consultant, blockchain educator, cryptocurrency expert, Web3 innovation, DeFi ecosystem, crypto adoption, blockchain solutions, digital finance, crypto market analysis, Web3 strategy, DeFi protocols, blockchain governance, crypto regulations, NFTs, tokenomics, smart contracts, DeFi yield farming, crypto wallets, blockchain interoperability, Web3 security, DeFi lending, crypto trading strategies, blockchain scalability",
   authors: [
     {
       name: "Johnex",

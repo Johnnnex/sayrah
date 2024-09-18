@@ -85,6 +85,12 @@ const featured: {
     subtitle: "Web3TV Nigeria; August 3, 2022",
     link: "https://www.youtube.com/watch?v=Kxd54Yskn9I",
   },
+  {
+    title: "Sarah Idahosa: The Nigerian Queen of Web3 & DeFi",
+    url: "features-sarah",
+    subtitle: "Simplvest; May, 2024",
+    link: "https://www.simplvest.com/sarah-idahosa-the-nigerian-queen-of-web3-defi/",
+  },
 ];
 const About = () => {
   return (
@@ -109,33 +115,35 @@ const About = () => {
           >
             Sarah Idahosa is a versatile professional distinguished for her
             proficiency in Web3 community development, educational initiatives,
-            decentralized finance research, and token economics. She serves as
-            the esteemed founder of Women In DeFi, a pioneering community
-            dedicated to empowering women with comprehensive knowledge of
-            blockchain technology and adeptly navigating the Web3 ecosystem
-            utilizing their existing Web2 competencies. <br />
+            and decentralized finance research. She is the esteemed founder of
+            Women In DeFi, a pioneering community dedicated to empowering women
+            with comprehensive knowledge of blockchain technology and adeptly
+            navigating the Web3 ecosystem utilizing their existing Web2
+            competencies.
+            <br />
             <br />
             In addition to her pivotal role at Women In DeFi, Sarah also assumes
-            the position of community manager at Cassava Network. This
-            innovative platform serves as a pivotal bridge between Web 2 and Web
-            3, particularly focusing on NFTs, gaming, and entertainment sectors.
-            Through her stewardship, Sarah facilitates seamless connections
-            between individuals and the manifold advantages inherent in the Web3
-            landscape. <br />
+            the partnership and community growth lead position at Mansa. This
+            DeFi platform provides liquidity solutions to cross-border payment
+            companies.
+            <br />
             <br />
             Drawing upon a robust background in blockchain education, Sarah is
             deeply committed to facilitating individuals&apos; transition from
-            Web2 to Web3 paradigms. <br />
+            Web2 to Web3 paradigms.
+            <br />
             <br />
             Her experience extends to dynamic public speaking engagements, where
-            she has been invited to share her insights at prestigious forums
+            she has been invited to share her insights at prestigious forums,
             including Nigerian FinTech Week, GDG DEVFEST Lagos, Africa Tech
-            Summit in Kenya, and Africa Money and DeFi Summit in Ghana. <br />
+            Summit in Kenya, and Africa Money and DeFi Summit in Ghana.
+            <br />
             <br />
             Sarah&apos;s illustrious career has been marked by fruitful
-            collaborations with renowned tech entities such as Mara, Myth of
-            Money, and Africa Tech Summit, highlighting her influential presence
-            and profound impact within the global technology community
+            collaborations with renowned tech entities such as Cassava Network,
+            Mara, Myth of Money, and Africa Tech Summit, highlighting her
+            influential presence and profound impact within the global
+            technology community.
           </p>
         </div>
       </section>

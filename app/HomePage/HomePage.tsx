@@ -91,24 +91,24 @@ const HomePage = () => {
               <p
                 className={`${poppins.className} leading-[200%] ~text-[12px]/[16px] text-justify mb-[28px] font-[400] text-black wow fadeIn`}
               >
-                Sarah Idahosa; (Sayraah) is a versatile professional
-                distinguished for her proficiency in Web3 community development,
-                educational initiatives, decentralized finance research, and
-                token economics. She serves as the esteemed founder of Women In
-                DeFi, a pioneering community dedicated to empowering women with
-                comprehensive knowledge of blockchain technology and adeptly
-                navigating tthe Web3 ecosystem utilizing their existing Web2
-                competencies. <br />
+                Sarah Idahosa is a versatile professional distinguished for her
+                proficiency in Web3 community development, educational
+                initiatives, and decentralized finance research. She is the
+                esteemed founder of Women In DeFi, a pioneering community
+                dedicated to empowering women with comprehensive knowledge of
+                blockchain technology and adeptly navigating the Web3 ecosystem
+                utilizing their existing Web2 competencies.
+                <br />
                 <br />
                 In addition to her pivotal role at Women In DeFi, Sarah also
-                assumes the position of community manager at Cassava Network.
-                This innovative platform serves as a pivotal bridge between Web
-                2 and Web 3, particularly focusing on NFTs, gaming, and
-                entertainment sectors. <br />
+                assumes the partnership and community growth lead position at
+                Mansa. This DeFi platform provides liquidity solutions to
+                cross-border payment companies.
                 <br />
-                Through her stewardship, Sarah facilitates seamless connections
-                between individuals & the manifold advantages inherent in the
-                Web3 landscape...{" "}
+                <br />
+                Drawing upon a robust background in blockchain education, Sarah
+                is deeply committed to facilitating individuals&apos; transition
+                from Web2 to Web3 paradigms...
                 <Link
                   href="/about"
                   className="text-[#76063D] ~text-[10px]/[14px] italic inline h-fit mb-0 hover:underline"
