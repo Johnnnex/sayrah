@@ -19,6 +19,12 @@ const featured: {
   link: string;
 }[] = [
   {
+    title: "Sarah Idahosa: The Nigerian Queen of Web3 & DeFi",
+    url: "features-sarah",
+    subtitle: "Simplvest; May, 2024",
+    link: "https://www.simplvest.com/sarah-idahosa-the-nigerian-queen-of-web3-defi/",
+  },
+  {
     title: "Empowering Women In Blockchain: The Journey of Women In DeFi.",
     url: "features-sarah",
     subtitle: "Inside the Hive with Feezy Podcast; Sept 2023",
@@ -84,12 +90,6 @@ const featured: {
     url: "features-sarah",
     subtitle: "Web3TV Nigeria; August 3, 2022",
     link: "https://www.youtube.com/watch?v=Kxd54Yskn9I",
-  },
-  {
-    title: "Sarah Idahosa: The Nigerian Queen of Web3 & DeFi",
-    url: "features-sarah",
-    subtitle: "Simplvest; May, 2024",
-    link: "https://www.simplvest.com/sarah-idahosa-the-nigerian-queen-of-web3-defi/",
   },
 ];
 const About = () => {
