@@ -25,6 +25,18 @@ const featured: {
     link: "https://www.simplvest.com/sarah-idahosa-the-nigerian-queen-of-web3-defi/",
   },
   {
+    title: "Quidax Spotlight: 5 Women Rocking the Crypto World",
+    url: "features-sarah",
+    subtitle: "March 8, 2024",
+    link: "https://blog.quidax.ng/quidax-spotlight-5-women-rocking-the-crypto-world/",
+  },
+  {
+    title: "Web3: A catalyst for economic empowerment for young women",
+    url: "features-sarah",
+    subtitle: "October 2, 2024",
+    link: "https://businessday.ng/opinion/article/web3-a-catalyst-for-economic-empowerment-for-young-women/",
+  },
+  {
     title: "Empowering Women In Blockchain: The Journey of Women In DeFi.",
     url: "features-sarah",
     subtitle: "Inside the Hive with Feezy Podcast; Sept 2023",
